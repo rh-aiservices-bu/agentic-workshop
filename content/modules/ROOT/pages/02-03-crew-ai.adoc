@@ -1,3 +1,4 @@
 = Crew AI
+include::_attributes.adoc[]
 
 TBD

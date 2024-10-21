@@ -3,7 +3,7 @@
 ** xref:01-02-llm-limitations.adoc[1.2 What are the limitations of LLMs?]
 ** xref:01-03-big-private-vs-open-source-llms.adoc[1.3 Big Private LLMs vs Open Source Domain Specific LLMs]
 ** xref:01-04-what-is-agentic-ai.adoc[1.4 What is Agentic AI?]
-** xref:01-05-why-implement-ai-agents.adoc[1.5 Why should I implement AI Agents? / Why is it important to my organization?]
+** xref:01-05-why-should-care-agents.adoc[1.5 Why is it important to my organization?]
 
 * 2. AI Agent Frameworks
 ** xref:02-01-langgraph.adoc[2.1 LangGraph]
