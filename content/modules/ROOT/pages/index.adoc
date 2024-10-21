@@ -6,4 +6,4 @@ include::_attributes.adoc[]
 
 == Contributing
 
-If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/parasol-insurance/[https://github.com/rh-aiservices-bu/parasol-insurance/,window=_blank]
+If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/agentic-workshop/[https://github.com/rh-aiservices-bu/agentic-workshop/,window=_blank]
