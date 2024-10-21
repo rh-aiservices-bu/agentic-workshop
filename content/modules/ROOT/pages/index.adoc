@@ -1,0 +1,9 @@
+= {lab_name}
+include::_attributes.adoc[]
+
+== Overview
+
+
+== Contributing
+
+If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/parasol-insurance/[https://github.com/rh-aiservices-bu/parasol-insurance/,window=_blank]

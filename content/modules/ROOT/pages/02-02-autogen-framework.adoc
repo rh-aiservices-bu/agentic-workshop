@@ -1,0 +1,4 @@
+= AutoGen
+include::_attributes.adoc[]
+
+TBD
