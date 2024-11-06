@@ -1,4 +1,5 @@
-= Crew AI
+= Setting stage
 include::_attributes.adoc[]
+:slide:
 
 TBD

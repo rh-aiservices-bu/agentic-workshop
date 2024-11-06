@@ -1,0 +1,5 @@
+= Examples from prototype
+include::_attributes.adoc[]
+:slide:
+
+TBD

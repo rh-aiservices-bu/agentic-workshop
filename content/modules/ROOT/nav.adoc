@@ -1,40 +1,47 @@
 * 1. Background
-** xref:01-01-what-is-llm.adoc[1.1 What is an LLM?]
-** xref:01-02-llm-limitations.adoc[1.2 What are the limitations of LLMs?]
-** xref:01-03-big-private-vs-open-source-llms.adoc[1.3 Big Private LLMs vs Open Source Domain Specific LLMs]
-** xref:01-04-what-is-agentic-ai.adoc[1.4 What is Agentic AI?]
-** xref:01-05-why-should-care-agents.adoc[1.5 Why is it important to my organization?]
+** xref:01-01-setting-stage.adoc[1.1 Setting the stage]
+** xref:01-02-current-process.adoc[1.2 Current Process]
+** xref:01-03-proposed-improvements.adoc[1.3 Proposed Improvements]
+** xref:01-04-examples-from-prototype.adoc[1.4 Examples from prototype]
+** xref:01-05-results.adoc[1.5 Results and Next Steps]
 
-* 2. AI Agent Frameworks
-** xref:02-01-langgraph.adoc[2.1 LangGraph]
-** xref:02-02-autogen-framework.adoc[2.2 AutoGen Framework]
-** xref:02-03-crew-ai.adoc[2.3 CrewAI]
-** xref:02-04-llama-index.adoc[2.4 LlamaIndex]
+* 2. Agentic AI Overview
+** xref:02-01-what-is-llm.adoc[2.1 What is an LLM?]
+** xref:02-02-llm-limitations.adoc[2.2 What are the limitations of LLMs?]
+** xref:02-03-big-private-vs-open-source-llms.adoc[2.3 Big Private LLMs vs Open Source Domain Specific LLMs]
+** xref:02-04-what-is-agentic-ai.adoc[2.4 What is Agentic AI?]
+** xref:02-05-why-should-care-agents.adoc[2.5 Why is it important to my organization?]
 
-* 3. Non-Agentic Patterns
-** xref:03-01-non-agentic-patterns.adoc[3.1 Non-Agentic Patterns]
-** xref:03-02-chain-of-thought.adoc[3.2 Chain of Thought]
-** xref:03-03-tools-usage.adoc[3.3 Tools Usage from LLM Perspective]
-** xref:03-04-react-prompting.adoc[3.4 Tools Usage from LLM Perspective]
-** xref:03-05-rag.adoc[3.5 Retrieval Augmented Generation (RAG)]
+* 3. AI Agent Frameworks
+** xref:03-01-langgraph.adoc[3.1 LangGraph]
+** xref:03-02-autogen-framework.adoc[3.2 AutoGen Framework]
+** xref:03-03-crew-ai.adoc[3.3 CrewAI]
+** xref:03-04-llama-index.adoc[3.4 LlamaIndex]
 
-* 4. Agent-Based Integrations
-** xref:04-01-agentic-integrations.adoc[4.1 Agentic Integrations]
-** xref:04-02-what-is-an-agent.adoc[4.2 What is an Agent?]
-** xref:04-03-routing-collaboration.adoc[4.3 Routing & Collaboration (AI Agents & Single LLM)]
-** xref:04-04-routing-single-llm-agent-tools.adoc[4.4 Routing (Single LLM + Single Agent & Multiple Tools)]
-** xref:04-05-collaboration-single-llm-agents.adoc[4.5 Collaboration (Single LLM & Multiple Agents)]
-** xref:04-06-multiple-llms.adoc[4.6 Multiple Agent & Multi LLMs]
+* 4. Non-Agentic Patterns
+** xref:04-01-non-agentic-patterns.adoc[4.1 Non-Agentic Patterns]
+** xref:04-02-chain-of-thought.adoc[4.2 Chain of Thought]
+** xref:04-03-tools-usage.adoc[4.3 Tools Usage from LLM Perspective]
+** xref:04-04-react-prompting.adoc[4.4 React Prompting]
+** xref:04-05-rag.adoc[4.5 Retrieval Augmented Generation (RAG)]
 
-* 5. Advanced Agentic AI
-** xref:05-01-react-implementation.adoc[5.1 ReAct Implementation]
-** xref:05-02-supervision-pm.adoc[5.2 Supervision & Supervision Implementation (PM)]
-** xref:05-03-building-supervisors.adoc[5.3 Building Supervisors]
-** xref:05-04-hierarchical-team-agents.adoc[5.4 Hierarchical Team Agents]
+* 5. Agent-Based Integrations
+** xref:05-01-agentic-integrations.adoc[5.1 Agentic Integrations]
+** xref:05-02-what-is-an-agent.adoc[5.2 What is an Agent?]
+** xref:05-03-routing-collaboration.adoc[5.3 Routing & Collaboration (AI Agents & Single LLM)]
+** xref:05-04-routing-single-llm-agent-tools.adoc[5.4 Routing (Single LLM + Single Agent & Multiple Tools)]
+** xref:05-05-collaboration-single-llm-agents.adoc[5.5 Collaboration (Single LLM & Multiple Agents)]
+** xref:05-06-multiple-llms.adoc[5.6 Multiple Agent & Multi LLMs]
 
-* 6. Enhance RAG with Agentic AI
-** xref:06-01-adaptive-rag.adoc[6.1 Adaptive RAG]
-** xref:06-02-self-rag.adoc[6.2 Self RAG]
+* 6. Advanced Agentic AI
+** xref:06-01-react-implementation.adoc[6.1 ReAct Implementation]
+** xref:06-02-supervision-pm.adoc[6.2 Supervision & PM Implementation (PM)]
+** xref:06-03-building-supervisors.adoc[6.3 Building Supervisors]
+** xref:06-04-hierarchical-team-agents.adoc[6.4 Hierarchical Team Agents]
 
-* 7. End of Lab
-** xref:07-01-end-of-lab.adoc[7.1 Thanks]
+* 7. Enhance RAG with Agentic AI
+** xref:07-01-adaptive-rag.adoc[7.1 Adaptive RAG]
+** xref:07-02-self-rag.adoc[7.2 Self RAG]
+
+* 8. End of Lab
+** xref:08-01-end-of-lab.adoc[8.1 Thanks]

@@ -1,0 +1,5 @@
+= Adaptive RAG
+include::_attributes.adoc[]
+:slide:
+
+TBD

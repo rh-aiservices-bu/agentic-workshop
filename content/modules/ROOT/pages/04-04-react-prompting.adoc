@@ -1,0 +1,5 @@
+= React prompting
+include::_attributes.adoc[]
+:slide:
+
+TBD

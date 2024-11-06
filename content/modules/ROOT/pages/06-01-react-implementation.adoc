@@ -1,0 +1,5 @@
+= React implementation
+include::_attributes.adoc[]
+:slide:
+
+TBD

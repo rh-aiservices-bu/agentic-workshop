@@ -1,0 +1,5 @@
+= crew ai.adoc
+include::_attributes.adoc[]
+:slide:
+
+TBD
