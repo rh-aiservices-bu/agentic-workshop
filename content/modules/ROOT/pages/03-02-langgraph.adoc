@@ -1,4 +1,20 @@
 = LangGraph
 include::_attributes.adoc[]
 
-TBD
+**Language**: Python  
+**Company**: LangChain Inc.  
+**License**: MIT  
+
+**LangGraph** is a library designed for creating complex, stateful applications that use large language models (LLMs) to manage agent and multi-agent workflows. Unlike traditional frameworks, LangGraph uses graph-based cycles instead of directed acyclic graphs (DAGs), enabling more intricate and adaptable workflows. This approach supports advanced use cases where agents may revisit tasks or adjust based on dynamic changes.
+
+== Key Features
+
+- **Graph-based Cycles**: By supporting cycles, LangGraph allows for flexible, iterative workflows, suitable for multi-agent interactions and feedback loops in applications requiring complex decision paths.
+
+- **Controllability**: LangGraph provides fine-grained control over agent flows and state management, giving developers more precise handling of agent interactions and process adjustments.
+
+- **Persistence**: With built-in support for memory and human-in-the-loop functionalities, LangGraph allows agents to retain context across interactions, facilitating advanced, long-term workflows and adaptable responses.
+
+=== Important Note
+
+For our upcoming workshop, we will be using LangGraph to demonstrate the potential of graph-based language agents in building sophisticated, real-world applications. Its flexibility and control make it an ideal choice for showcasing multi-agent interactions, memory, and dynamic workflows.
