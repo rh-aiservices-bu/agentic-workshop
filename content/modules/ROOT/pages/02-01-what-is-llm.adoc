@@ -3,5 +3,14 @@ include::_attributes.adoc[]
 
 In order to make this {ic-lab} seem more realistic, we will be describing this imaginary scenario.
 
-== Situation
-:slide:
+**Large Language Models (LLMs)** are advanced AI systems designed to understand and generate human-like text. By processing and analyzing vast amounts of data, these models can generate coherent responses, predict text completions, and perform a wide range of language-related tasks.
+
+== Key Characteristics
+
+- **AI Models**: LLMs are sophisticated forms of artificial intelligence that use deep learning techniques to interpret and produce text. They are structured to simulate human language patterns, enabling them to engage in natural-sounding conversations and provide relevant information.
+
+- **Training Data**: LLMs are pre-trained on large datasets collected from a variety of sources, including books, articles, websites, and other text corpora. This extensive training enables them to recognize context, vocabulary, and language nuances, allowing them to generate meaningful and contextually appropriate text.
+
+- **Text Generation**: One of the core abilities of LLMs is to generate coherent and relevant text based on a given prompt. They can complete sentences, provide responses to questions, and even create entirely new content on a variety of topics.
+
+- **Versatile Tasks**: LLMs are capable of performing a wide range of language-related tasks, such as translation, summarization, question answering, and creative writing. This versatility makes them useful across industries, from customer service automation to content generation and research support.

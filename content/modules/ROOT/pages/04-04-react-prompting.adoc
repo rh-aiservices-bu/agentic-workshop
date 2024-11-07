@@ -2,4 +2,44 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+== What is ReAct Prompting?
+
+**ReAct prompting** is an advanced technique for large language models (LLMs) that integrates reasoning and acting, allowing models to approach tasks in a structured, iterative way. By guiding the model through task-solving trajectories, ReAct prompting enables it to reason through a problem step-by-step while simultaneously performing actions, such as retrieving information or interacting with external tools. This synergy between reasoning and acting allows the model to both plan and execute in a flexible, effective manner.
+
+== Why ReAct Prompting is Effective
+
+ReAct prompting excels by combining two crucial processes:
+
+- **Reasoning**: The model generates reasoning traces as it thinks through the task, effectively breaking down complex queries into manageable steps. This process enables the model to understand and approach each part of the problem individually.
+  
+- **Acting**: The model performs actions, such as querying external APIs, accessing databases, or using specific tools to gather real-time information. These actions are informed by the model’s reasoning, ensuring that each action contributes meaningfully to the overall solution.
+
+For more in-depth information, see the original research paper on ReAct prompting: *[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)*.
+
+image::04/04-01-react-basic.png[ReAct Basic]
+
+== How Does ReAct Prompting Work?
+
+ReAct prompting follows a structured **Thought → Action → Observation** loop, which iteratively improves the model's response accuracy and relevance. Here’s how it works:
+
+1. **Thought**: The model reasons about the task at hand, deciding which action will most effectively address the next step.
+  
+2. **Action**: Based on its reasoning, the model executes the chosen action, whether it’s querying an API, performing a calculation, or retrieving specific data.
+
+3. **Observation**: The model observes the results of the action, updates its internal reasoning based on the new information, and determines whether additional steps are needed.
+
+This loop continues until the model has gathered enough information to generate a complete, accurate response or decides that no further actions are required.
+
+image::04/04-02-react-diagram.png[ReAct Diagram]
+
+== Why Use ReAct Prompting?
+
+ReAct prompting enables LLMs to achieve state-of-the-art performance across a range of complex tasks by enhancing both their reasoning and acting capabilities. It addresses key limitations in traditional prompting approaches:
+
+- **Prevents Misinformation**: In cases where relying solely on reasoning (e.g., chain-of-thought) might lead to errors due to outdated or incomplete internal knowledge, ReAct grounding in external actions mitigates misinformation, as the model actively retrieves verified data.
+
+- **Improves Solution Synthesis**: Without reasoning, pure action-based approaches can lead to incomplete or incoherent solutions. ReAct ensures coherent, synthesized answers by blending both reasoning and actions into the response process.
+
+---
+
+For example, in our notebook, we’ll use ReAct prompting to ...

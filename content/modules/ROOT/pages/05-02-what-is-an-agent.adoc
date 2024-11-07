@@ -2,4 +2,27 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+== Overview
+
+An Agent is an autonomous system that leverages Large Language Models (LLMs) to perform tasks by understanding, reasoning, planning, and executing actions with minimal human intervention. AI agents are designed to break down complex problems into manageable steps, utilizing tools, accessing memory, and adapting their behavior based on the provided context.
+
+At its core, an agent is structured to:
+
+1. **Receive a Task**: The agent takes input from the user, such as a question or command.
+2. **Plan a Solution**: The agent decomposes the problem, chooses appropriate tools, and reasons through possible solutions.
+3. **Execute the Plan**: It performs actions, such as retrieving information, using tools, or generating responses based on the devised plan.
+4. **Deliver Results**: Finally, it presents the solution or output in a structured, actionable format.
+
+image::02/02-01-agentic-vs-non-agentic.png[AI Agents Diagram]
+
+== Key Components of an AI Agent:
+
+* **Profiling Module (Agent Core)**: This is the agent's decision-making hub. It defines the role and goals of the agent (e.g., financial analyst, teacher), selects appropriate tools, and coordinates task execution. The agent's "profile" helps determine its behavior and interaction style based on its role.
+
+* **Memory Module**: The agent uses memory to track past interactions and experiences. Short-term memory stores context-relevant information (e.g., current session details), while long-term memory retains important information over time, which the agent can refer back to when needed.
+
+* **Tools Module**: External resources (e.g., APIs, databases) that the agent can call upon to complete tasks, like retrieving real-time data, performing calculations, or interacting with other systems.
+
+* **Planning Module**: This module allows the agent to break down complex tasks into smaller, manageable sub-tasks. By planning step-by-step, the agent can tackle intricate queries and tasks with greater efficiency and precision.
+
+image::02/02-02-agentic-components.png[AI Agents Diagram]

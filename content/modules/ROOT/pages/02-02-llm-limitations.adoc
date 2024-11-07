@@ -2,4 +2,16 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+While large language models (LLMs) are powerful tools for generating and processing text, they come with several inherent limitations that impact their effectiveness and reliability in complex applications. Understanding these limitations is crucial for designing robust, secure, and accurate AI systems.
+
+== Key Limitations
+
+- **Static Knowledge**: LLMs are trained on fixed datasets, which means they lack the ability to access real-time data or updates unless integrated with external tools. Without access to new information, LLMs cannot respond accurately to recent events or emerging knowledge.
+
+- **Weak Reasoning**: LLMs often struggle with multi-step logical reasoning and complex problem-solving. While they excel at pattern recognition and language generation, their ability to perform deep reasoning, especially in tasks requiring consistent logic across multiple steps, is limited.
+
+- **Limited Memory**: LLMs can only process a specific amount of text within a single prompt or conversation, which constrains their ability to manage long interactions or remember information over extended exchanges. This limitation can hinder their effectiveness in applications requiring sustained dialogue or context retention.
+
+- **Hallucination**: LLMs may produce incorrect or nonsensical information, a phenomenon known as "hallucination." This occurs when the model generates plausible-sounding but inaccurate responses, which can be problematic for applications that require high accuracy.
+
+- **Security Risks**: LLMs carry security risks, particularly when handling sensitive information. Without strict controls, they may unintentionally generate or leak confidential data, posing potential privacy and security challenges.
