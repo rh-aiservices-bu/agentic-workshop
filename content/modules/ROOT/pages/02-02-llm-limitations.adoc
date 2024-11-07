@@ -15,3 +15,5 @@ While large language models (LLMs) are powerful tools for generating and process
 - **Hallucination**: LLMs may produce incorrect or nonsensical information, a phenomenon known as "hallucination." This occurs when the model generates plausible-sounding but inaccurate responses, which can be problematic for applications that require high accuracy.
 
 - **Security Risks**: LLMs carry security risks, particularly when handling sensitive information. Without strict controls, they may unintentionally generate or leak confidential data, posing potential privacy and security challenges.
+
+image::02/02-01-llm-limitations.png[AI Agents Frameworks, scaledwidth="70%"]
