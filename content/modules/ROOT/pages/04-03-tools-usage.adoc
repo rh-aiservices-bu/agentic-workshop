@@ -2,8 +2,6 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
-
 Large language models (LLMs) are powerful for natural language understanding and response generation, but they have limitations, especially when it comes to accessing real-time information or performing specific computations. By incorporating external tools, LLMs can extend their capabilities, enabling them to retrieve up-to-date information, perform complex calculations, and interact with structured systems like databases and APIs.
 
 image::04/04-02-tools-diagram.png[AI Agents Frameworks, scaledwidth="70%"]
