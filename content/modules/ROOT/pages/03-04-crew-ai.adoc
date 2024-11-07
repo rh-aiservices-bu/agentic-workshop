@@ -1,0 +1,17 @@
+= Crew AI Framework
+include::_attributes.adoc[]
+:slide:
+
+**Language**: Python  
+**Company**: CrewAI Inc.  
+**License**: MIT  
+
+**AI Agents** by CrewAI Inc. is an open-source framework specifically designed for building scalable, multi-agent systems capable of tackling practical, industry-driven tasks. Built with flexibility and ease of use in mind, this framework empowers developers to create intelligent, customizable agents that interact and collaborate seamlessly within complex workflows.
+
+== Key Features and Capabilities
+
+- **Streamlined Modeling and Deployment**: CrewAI’s framework simplifies the process of modeling and managing multi-agent systems, allowing each agent to operate independently while remaining adaptable to specific workflows. This approach enables developers to design sophisticated systems tailored to diverse industry needs, such as customer support automation, process optimization, and more.
+
+- **Seamless Integration with Human Oversight and External Tools**: Many real-world applications require a combination of autonomous operation and human supervision. CrewAI’s framework supports built-in Human-in-the-Loop functionality, allowing agents to defer to human input when necessary, particularly in high-stakes scenarios. Additionally, agents can integrate with a range of external tools to access data from APIs, databases, and other resources, making them capable of performing complex, data-driven tasks. For even more versatility, agents can execute code directly, equipping them to handle complex calculations and respond to dynamic conditions in real-time.
+
+- **Flexible Open-Source and Enterprise Solutions**: CrewAI Inc. offers an open-source version under the **MIT license**, promoting collaboration within the developer community. For enterprises, CrewAI also provides **CrewAI+**, an advanced version with a no-code interface, ready-made templates for common use cases, and enhanced capabilities for managing agents at scale in production environments.

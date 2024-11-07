@@ -13,10 +13,11 @@
 ** xref:02-05-why-should-care-agents.adoc[2.5 Why is it important to my organization?]
 
 * 3. AI Agent Frameworks
-** xref:03-01-langgraph.adoc[3.1 LangGraph]
-** xref:03-02-autogen-framework.adoc[3.2 AutoGen Framework]
-** xref:03-03-crew-ai.adoc[3.3 CrewAI]
-** xref:03-04-llama-index.adoc[3.4 LlamaIndex]
+** xref:03-01-ai-agent-frameworks.adoc[3.1 AI Agents Frameworks]
+** xref:03-02-langgraph.adoc[3.2 LangGraph]
+** xref:03-03-autogen-framework.adoc[3.3 AutoGen Framework]
+** xref:03-04-crew-ai.adoc[3.4 CrewAI]
+** xref:03-05-llama-index.adoc[3.5 LlamaIndex]
 
 * 4. Non-Agentic Patterns
 ** xref:04-01-non-agentic-patterns.adoc[4.1 Non-Agentic Patterns]

@@ -1,0 +1,19 @@
+= LlamaIndex AI Framework
+include::_attributes.adoc[]
+:slide:
+
+**Language**: Python  
+**Company**: Llama Index Inc.  
+**License**: MIT  
+
+**Llama Index AI Framework** by Llama Index Inc. is an open-source solution for developing production-grade, multi-agent AI systems. This framework supports agents functioning autonomously within a scalable, orchestrated environment suited for real-world applications.
+
+== Key Features and Capabilities
+
+- **Agent-as-a-Service**: Each agent operates as a distinct service within the system, providing modularity and scalability. Agents can be easily added or adjusted based on the system's evolving needs.
+
+- **Centralized Message Queue**: Agents communicate via a centralized message queue, publishing and pulling messages to coordinate tasks effectively and maintain smooth inter-agent communication.
+
+- **Control Plane with Orchestration**: The framework includes a control plane that tracks tasks and services, dynamically assigning next steps through an orchestrator. This orchestrated control ensures efficient task handling and system stability.
+
+- **Built-In CLI Tool**: Llama Index offers a command-line interface to monitor and manage agent services. This CLI enables real-time tracking, direct interaction, and troubleshooting of agent activities.

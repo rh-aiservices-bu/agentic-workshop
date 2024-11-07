@@ -1,0 +1,18 @@
+= AutoGen Framework
+include::_attributes.adoc[]
+
+**Language**: Python  
+**Company**: Microsoft  
+**License**: MIT  
+
+**AutoGen** is an open-source library designed by Microsoft to facilitate the creation of stateful, multi-actor applications that harness the power of large language models (LLMs). This framework provides developers with the tools needed to build agent and multi-agent workflows, making it easier than ever to design and manage complex interactions between intelligent agents.
+
+== Key Features and Capabilities
+
+- **High-Level Abstraction**: AutoGen allows developers to model, organize, and control multi-agent systems with ease. Each agent is both customizable and independent, empowering users to configure specific agent behaviors within workflows without needing to manage the underlying complexity manually. This abstraction enables a streamlined approach to designing workflows that can adapt to various tasks and environments.
+
+- **Human-in-the-Loop Integration and External Tools**: In real-world applications, full autonomy may not always be ideal. AutoGen provides a built-in Human-in-the-Loop functionality, allowing for human oversight and intervention where necessary. Additionally, AutoGen supports the integration of external tools, which agents can leverage to perform tasks beyond the limitations of LLMs alone. This approach enhances the flexibility and practicality of agent workflows, enabling agents to interact with external data sources, APIs, and other systems.
+
+- **Agent Code Execution**: To handle complex scenarios, AutoGen enables agents to execute code directly, allowing them to dynamically adjust their actions based on real-time inputs and changing conditions. This feature empowers agents to handle more nuanced and sophisticated tasks within workflows.
+
+- **AutoGen Studio**: A core component of the AutoGen framework, AutoGen Studio provides a low-code interface for users to quickly prototype, test, and refine agent workflows. With AutoGen Studio, developers can seamlessly design, enhance, and integrate agents into larger systems with minimal coding effort. The Studio’s intuitive interface enables rapid iteration, making it easier to deploy and scale agentic applications effectively.
