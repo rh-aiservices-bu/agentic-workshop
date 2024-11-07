@@ -4,11 +4,11 @@ include::_attributes.adoc[]
 
 Large language models (LLMs) are powerful for natural language understanding and response generation, but they have limitations, especially when it comes to accessing real-time information or performing specific computations. By incorporating external tools, LLMs can extend their capabilities, enabling them to retrieve up-to-date information, perform complex calculations, and interact with structured systems like databases and APIs.
 
-image::04/04-02-tools-diagram.png[AI Agents Frameworks, scaledwidth="70%"]
-
 == The Role of Tool Calling
 
 Many AI applications require interactions with both humans and external systems. While LLMs naturally excel at human communication in natural language, they also need to interact with systems that have structured data requirements. For instance, APIs often require specific input schemas or payload formats, which LLMs must generate to complete the request. This is where **tool calling** becomes crucial: it allows the model to call external tools and request responses in a format that aligns with the requirements of a particular system.
+
+image::04/04-02-tools-diagram.png[AI Agents Frameworks, scaledwidth="70%"]
 
 Through tool calling, LLMs can:
 
