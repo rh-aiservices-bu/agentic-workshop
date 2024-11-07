@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import configparser
 import database_handler
 import method
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
@@ -12,6 +13,14 @@ info = config['DEFAULT']
 
 dbh = database_handler.DatabaseHandler(db_name=info['db_name'], check_same_thread=False)
 m = method.Method(conf_file='db.conf')
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class Schedule(BaseModel):
     sid: str

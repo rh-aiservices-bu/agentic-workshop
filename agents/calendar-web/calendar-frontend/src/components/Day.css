@@ -1,0 +1,33 @@
+/* src/components/Day.css */
+.day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.day h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.schedule-list {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.schedule-item {
+  background-color: #e3f2fd;
+  margin-bottom: 8px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.no-schedule {
+  color: #aaa;
+  font-size: 0.9em;
+}
