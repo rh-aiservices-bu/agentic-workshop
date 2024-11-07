@@ -2,4 +2,30 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+== Overview
+
+**Retrieval-Augmented Generation (RAG)** is an approach that combines the strengths of large language models (LLMs) with real-time information retrieval to enhance response accuracy and relevance. Traditional LLMs rely solely on static, pre-existing knowledge within their training data, which limits their ability to provide up-to-date information or respond to highly specific queries. RAG addresses this limitation by allowing the model to retrieve external data dynamically during response generation.
+
+== How RAG Works
+
+In a RAG setup, the model follows a two-step process:
+
+1. **Retrieval**: When a user submits a prompt, the model queries an external database, search engine, or knowledge base to retrieve relevant documents or data points. This retrieval step ensures that the model has access to the most current and contextually relevant information.
+
+2. **Generation**: The retrieved information is then combined with the model’s own knowledge to generate a final, context-aware response. By incorporating up-to-date data, the model can provide more accurate answers and handle queries that would otherwise be outside its scope.
+
+== Benefits of RAG
+
+- **Enhanced Accuracy**: RAG reduces reliance on outdated or incomplete training data, leading to more accurate and contextually relevant responses.
+- **Dynamic Knowledge Access**: The retrieval step provides real-time access to external information, enabling responses to rapidly changing or specialized topics.
+- **Better Handling of Niche Queries**: RAG is particularly effective for domain-specific applications, where the model may need to pull from specialized datasets or knowledge bases to answer complex questions.
+
+== Applications of RAG
+
+RAG is highly useful in scenarios where up-to-date or domain-specific information is essential, such as:
+
+- **Customer Support**: Providing precise answers by retrieving relevant documentation or FAQs.
+- **Research Assistance**: Pulling in real-time information from academic papers or databases to support queries.
+- **News Summarization**: Summarizing current events by accessing recent articles and reports.
+
+By augmenting LLMs with real-time retrieval, RAG enables models to generate responses that are not only coherent but also factually aligned with current information, making it a powerful approach for applications that demand high accuracy and relevance.
