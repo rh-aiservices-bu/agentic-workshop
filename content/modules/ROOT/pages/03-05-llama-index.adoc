@@ -2,9 +2,9 @@
 include::_attributes.adoc[]
 :slide:
 
-**Language**: Python  
-**Company**: Llama Index Inc.  
-**License**: MIT  
+* **Language**: Python  
+* **Company**: Llama Index Inc.  
+* **License**: MIT  
 
 **Llama Index AI Framework** by Llama Index Inc. is an open-source solution for developing production-grade, multi-agent AI systems. This framework supports agents functioning autonomously within a scalable, orchestrated environment suited for real-world applications.
 

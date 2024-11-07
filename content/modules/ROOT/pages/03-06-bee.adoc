@@ -1,0 +1,17 @@
+= Bee Framework
+include::_attributes.adoc[]
+:slide:
+
+* **Language**: Python  
+* **Company**: IBM  
+* **License**: MIT
+
+The Bee Agent Framework enables scalable, agent-based workflows compatible with models like IBM Granite and Llama 3.x.
+
+== Key Features
+
+- **AI Agents**: Prebuilt agents optimized for Llama 3.1 or customizable for other models.
+- **Tooling**: Built-in and customizable tools in JavaScript/Python.
+- **Code Execution**: Sandbox environment for secure code interpretation.
+- **Memory Optimization**: Strategies to manage token usage efficiently.
+- **Traceability**: Comprehensive logging and MLFlow integration for debugging.

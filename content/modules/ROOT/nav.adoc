@@ -18,6 +18,7 @@
 ** xref:03-03-autogen-framework.adoc[3.3 AutoGen Framework]
 ** xref:03-04-crew-ai.adoc[3.4 CrewAI]
 ** xref:03-05-llama-index.adoc[3.5 LlamaIndex]
+** xref:03-05-bee.adoc[3.6 Bee]
 
 * 4. Non-Agentic Patterns
 ** xref:04-01-non-agentic-patterns.adoc[4.1 Non-Agentic Patterns]

@@ -2,9 +2,9 @@
 include::_attributes.adoc[]
 :slide:
 
-**Language**: Python  
-**Company**: CrewAI Inc.  
-**License**: MIT  
+* **Language**: Python  
+* **Company**: CrewAI Inc.  
+* **License**: MIT  
 
 **AI Agents** by CrewAI Inc. is an open-source framework specifically designed for building scalable, multi-agent systems capable of tackling practical, industry-driven tasks. Built with flexibility and ease of use in mind, this framework empowers developers to create intelligent, customizable agents that interact and collaborate seamlessly within complex workflows.
 

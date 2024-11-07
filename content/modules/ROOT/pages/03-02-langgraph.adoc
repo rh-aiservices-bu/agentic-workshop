@@ -1,9 +1,9 @@
 = LangGraph
 include::_attributes.adoc[]
 
-**Language**: Python  
-**Company**: LangChain Inc.  
-**License**: MIT  
+* **Language**: Python  
+* **Company**: LangChain Inc.  
+* **License**: MIT  
 
 **LangGraph** is a library designed for creating complex, stateful applications that use large language models (LLMs) to manage agent and multi-agent workflows. Unlike traditional frameworks, LangGraph uses graph-based cycles instead of directed acyclic graphs (DAGs), enabling more intricate and adaptable workflows. This approach supports advanced use cases where agents may revisit tasks or adjust based on dynamic changes.
 

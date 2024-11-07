@@ -9,9 +9,10 @@ image::03/03-01-ai-agents-diagram.png[AI Agents Frameworks, scaledwidth="50%"]
 
 At a high level, AI agents can be designed to manage workflows, respond to human commands, and process vast amounts of data. They work autonomously yet are often configurable to align with specific tasks or goals. Common capabilities include data retrieval, natural language understanding, and integration with external tools or databases, allowing them to access and act on information from diverse sources. These frameworks support scalability, enabling systems to grow from handling individual tasks to managing multi-agent ecosystems in production environments.
 
-In this document, we’ll focus on four prominent AI agent frameworks:
+In this workshop, we’ll review on five prominent AI agent frameworks:
 
 1. **LangChain**
 2. **AutoGen**
 3. **Llama Index**
 4. **CrewAI**
+5. **Bee**
