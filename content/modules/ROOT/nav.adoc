@@ -8,9 +8,8 @@
 * 2. Agentic AI Overview
 ** xref:02-01-what-is-llm.adoc[2.1 What is an LLM?]
 ** xref:02-02-llm-limitations.adoc[2.2 What are the limitations of LLMs?]
-** xref:02-03-big-private-vs-open-source-llms.adoc[2.3 Big Private LLMs vs Open Source Domain Specific LLMs]
-** xref:02-04-what-is-agentic-ai.adoc[2.4 What is Agentic AI?]
-** xref:02-05-why-should-care-agents.adoc[2.5 Why is it important to my organization?]
+** xref:02-03-what-is-agentic-ai.adoc[2.3 What is Agentic AI?]
+** xref:02-04-why-should-care-agents.adoc[2.3 Why is it important to my organization?]
 
 * 3. AI Agent Frameworks
 ** xref:03-01-ai-agent-frameworks.adoc[3.1 AI Agents Frameworks]

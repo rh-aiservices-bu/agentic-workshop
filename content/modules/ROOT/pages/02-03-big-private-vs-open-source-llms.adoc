@@ -1,5 +1,0 @@
-= Big Private LLMs vs Open Source Domain Specific LLMs
-include::_attributes.adoc[]
-:slide:
-
-TBD
