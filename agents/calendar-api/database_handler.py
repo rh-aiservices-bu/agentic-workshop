@@ -1,116 +1,58 @@
 import sqlite3
 
-
 class DatabaseHandler:
-    """database handler"""
-
     def __init__(self, db_name: str, check_same_thread: bool = True):
-        """init"""
         self.db_name = db_name
-        self.conn = sqlite3.connect(
-            '{}.db'.format(db_name), check_same_thread=check_same_thread)
+        self.conn = sqlite3.connect(f'{db_name}.db', check_same_thread=check_same_thread)
         self.c = self.conn.cursor()
 
-    def execute(self, cmd: str):
-        """Execute command"""
-        self.c.execute(cmd)
-        self.conn.commit()
+    def execute(self, cmd: str, params=()):
+        try:
+            self.c.execute(cmd, params)
+            self.conn.commit()
+        except sqlite3.Error as e:
+            print(f"An error occurred: {e}")
 
     def create_table(self, table_name: str, columns: dict):
-        """Create table"""
-        lst = [str(k) + ' ' + str(v) for k, v in columns.items()]
-        columns_str = ','.join(lst)
-
-        cmd = 'CREATE TABLE {table_name}({columns_str})'
-
-        self.execute(cmd.format(
-            table_name=table_name,
-            columns_str=columns_str))
+        columns_str = ', '.join([f"{k} {v}" for k, v in columns.items()])
+        cmd = f'CREATE TABLE IF NOT EXISTS {table_name} ({columns_str})'
+        self.execute(cmd)
 
     def insert_data(self, table_name: str, columns: dict, data: dict):
-        """Insert a row of data"""
-        lst = ["'" + str(v) + "'" if columns[k] == 'TEXT' else str(v)
-               for k, v in data.items()]
-        data_str = ','.join(lst)
+        placeholders = ', '.join('?' for _ in data)
+        cmd = f'INSERT INTO {table_name} ({", ".join(data.keys())}) VALUES ({placeholders})'
+        self.execute(cmd, tuple(data.values()))
 
-        cmd = 'INSERT INTO {table_name} VALUES ({data_str})'
+    def update_data(self, table_name: str, data: dict, condition: dict):
+        data_str = ', '.join([f"{k} = ?" for k in data.keys()])
+        cond_str = ' AND '.join([f"{k} = ?" for k in condition.keys()])
+        cmd = f'UPDATE {table_name} SET {data_str} WHERE {cond_str}'
+        self.execute(cmd, tuple(data.values()) + tuple(condition.values()))
 
-        self.execute(cmd.format(
-            table_name=table_name,
-            data_str=data_str))
+    def delete_data(self, table_name: str, condition: dict):
+        cond_str = ' AND '.join([f"{k} = ?" for k in condition.keys()])
+        cmd = f'DELETE FROM {table_name} WHERE {cond_str}'
+        self.execute(cmd, tuple(condition.values()))
 
-    def update_data(self, table_name: str, columns: dict, data: dict, condition: dict):
-        """Update data"""
-        lst1 = [str(k) + '=' + "'" + str(v) + "'" if columns[k] == 'TEXT'
-                else str(k) + '=' + str(v)
-                for k, v in data.items()]
-        value_str = ','.join(lst1)
-
-        lst2 = [str(k) + '=' + "'" + str(v) + "'" if columns[k] == 'TEXT'
-                else str(k) + '=' + str(v)
-                for k, v in condition.items()]
-        condition_str = ' AND '.join(lst2)
-
-        cmd = 'UPDATE {table_name} SET {value_str} WHERE {condition_str}'
-
-        self.execute(cmd.format(
-            table_name=table_name,
-            value_str=value_str,
-            condition_str=condition_str))
-
-    def delete_data(self, table_name: str, columns: dict, condition: dict):
-        """Delete data"""
-        lst = [str(k) + '=' + "'" + str(v) + "'" if columns[k] == 'TEXT'
-               else str(k) + '=' + str(v)
-               for k, v in condition.items()]
-        condition_str = ' AND '.join(lst)
-
-        cmd = 'DELETE FROM {table_name} WHERE {condition_str}'
-
-        self.execute(cmd.format(
-            table_name=table_name,
-            condition_str=condition_str))
-
-    def fetch_data(self, table_name: str, columns: dict, condition: dict):
-        """Fetch data"""
-        lst = [str(k) + '=' + "'" + str(v) + "'" if columns[k] == 'TEXT'
-               else str(k) + '=' + str(v)
-               for k, v in condition.items()]
-        condition_str = ' AND '.join(lst)
-
-        cmd = 'SELECT * FROM {table_name} WHERE {condition_str}'
-
-        self.execute(cmd.format(
-            table_name=table_name,
-            condition_str=condition_str))
-
+    def fetch_data(self, table_name: str, condition: dict = None):
+        if condition:
+            cond_str = ' AND '.join([f"{k} = ?" for k in condition.keys()])
+            cmd = f'SELECT * FROM {table_name} WHERE {cond_str}'
+            self.execute(cmd, tuple(condition.values()))
+        else:
+            cmd = f'SELECT * FROM {table_name}'
+            self.execute(cmd)
         return self.c.fetchall()
 
-    def fetch_all(self, table_name: str):
-        """Fetch data"""
-        cmd = 'SELECT * FROM {table_name}'
-
-        self.execute(cmd.format(
-            table_name=table_name))
-
-        return self.c.fetchall()
-
-    def check_existence(self, table_name: str, columns: dict, condition: dict):
-        """check the existence of item"""
-        try:
-            res = self.fetch_data(table_name, columns, condition)
-            if len(res) == 0:
-                return False
-        except Exception:
-            return False
-        return True
-
+    def check_existence(self, table_name: str, condition: dict):
+        result = self.fetch_data(table_name, condition)
+        return bool(result)
 
 if __name__ == '__main__':
     dbh = DatabaseHandler(db_name="CalendarDB")
     print(dbh.check_existence(
         'calendar',
         {"sid": "TEXT", "name": "TEXT", "content": "TEXT", "category": "TEXT", "level": "INTEGER",
-            "status": "REAL", "creation_time": "TEXT", "start_time": "TEXT", "end_time": "TEXT"},
+         "status": "REAL", "creation_time": "TEXT", "start_time": "TEXT", "end_time": "TEXT"},
         {"sid": "22"}
     ))

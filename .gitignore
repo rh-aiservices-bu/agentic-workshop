@@ -49,3 +49,6 @@ package-lock.json
 lab-materials/04/datasets/*
 lab-materials/04/runs/*
 
+# agents
+agents/calendar-api/__pycache__
+agents/calendar-api/CalendarDB.db

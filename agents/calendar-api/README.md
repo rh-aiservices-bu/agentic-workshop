@@ -17,7 +17,6 @@ A simple calendar API powered by FastAPI.
 
 ## Usage
 
-1. Clone this repo from GitHub
 2. Install Python packages: `fastapi` and `uvicorn`
 3. Run `python build.py` to create a SQLite database (only run for the first time)
 4. Run `uvicorn server:app --reload`
