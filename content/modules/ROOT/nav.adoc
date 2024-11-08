@@ -19,7 +19,7 @@
 ** xref:03-05-llama-index.adoc[3.5 LlamaIndex]
 ** xref:03-05-bee.adoc[3.6 Bee]
 
-* 4. Non-Agentic Patterns
+* 4. Advance LLM Patterns
 ** xref:04-01-non-agentic-patterns.adoc[4.1 Non-Agentic Patterns]
 ** xref:04-02-chain-of-thought.adoc[4.2 Chain of Thought]
 ** xref:04-03-tools-usage.adoc[4.3 Tools Usage from LLM Perspective]
