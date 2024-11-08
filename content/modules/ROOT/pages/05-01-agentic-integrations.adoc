@@ -2,4 +2,43 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+Many LLM applications rely on a predefined control flow before and after LLM calls, such as **Retrieval-Augmented Generation (RAG)**, which retrieves relevant documents to ground the model’s response. However, when dealing with more complex tasks, fixed control flows may not be sufficient. In these cases, we use **agents**: systems that leverage LLMs to dynamically decide the control flow of an application.
+
+## What Are Agents?
+
+An **agent** uses an LLM to control the flow of an application based on the problem at hand. The LLM can:
+- **Route** between different execution paths.
+- **Choose Tools** to call for specific tasks.
+- **Evaluate Responses** to determine if further actions are needed.
+
+This flexibility allows agents to solve a wider range of problems, adapting their control flow as necessary.
+
+## Types of Agent Architectures
+
+image::05/05-02-agents.png[Agentic Integrations]
+
+1. **Router Agents**: These agents make single-step decisions, selecting from a predefined set of options. They often use structured outputs and prompt engineering to ensure reliable decision-making.
+
+2. **Tool-Calling Agents**: These agents use tools like APIs, databases, or code interpreters to solve tasks beyond the LLM’s capabilities. The LLM selects the appropriate tool based on the user input, executing multi-step workflows with access to external resources.
+
+3. **ReAct Agents**: A general-purpose architecture that combines **Tool Calling**, **Memory**, and **Planning**:
+   - **Tool Calling**: Allows the LLM to invoke various tools dynamically.
+   - **Memory**: Retains context across steps, using short-term and long-term memory.
+   - **Planning**: Enables the LLM to decide on multi-step actions, iteratively refining its approach based on observations.
+
+image::05/05-01-tool-calling.png[Tool Calling]
+
+## Key Features for Custom Agent Architectures
+
+- **Human-in-the-Loop**: Involves human oversight for critical decisions, such as approving actions or editing the agent’s state. This is crucial for sensitive tasks where full automation may not be desirable.
+- **Parallelization**: Supports concurrent processing of multiple tasks, optimizing efficiency in complex multi-agent systems.
+- **Subgraphs**: Enable modular design by managing isolated state for individual agents, allowing for hierarchical organization and controlled communication.
+- **Reflection**: Provides feedback for self-correction, evaluating task completion and improving agent reliability through iterative learning.
+
+## Memory and Planning
+
+Memory is vital for effective agent behavior:
+- **Short-term Memory**: Tracks information within a single session, allowing the agent to maintain context.
+- **Long-term Memory**: Stores data across sessions, enabling the agent to recall previous interactions.
+
+In planning, agents use a looped decision-making process, dynamically choosing actions based on the current context and updating the plan as new information becomes available.
