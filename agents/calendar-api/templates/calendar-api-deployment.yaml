@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: calendar-api
-          image: calendar-api:v1
+          image: quay.io/rcarrata/calendar-api:v1
           ports:
             - containerPort: 8000
           volumeMounts:

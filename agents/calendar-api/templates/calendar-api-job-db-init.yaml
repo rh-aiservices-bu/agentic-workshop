@@ -14,30 +14,12 @@ spec:
             claimName: calendar-db-pvc
       containers:
         - name: init-container
-          image: python:3.11-slim
-          command: ["sh", "-c"]
-          args:
-            - |
-              python3 - <<EOF
-              import sqlite3
-              conn = sqlite3.connect('/data/CalendarDB.db')
-              cursor = conn.cursor()
-              cursor.execute('''
-                  CREATE TABLE IF NOT EXISTS calendar (
-                      sid TEXT PRIMARY KEY,
-                      name TEXT,
-                      content TEXT,
-                      category TEXT,
-                      level INTEGER,
-                      status REAL,
-                      creation_time TEXT,
-                      start_time TEXT,
-                      end_time TEXT
-                  )
-              ''')
-              conn.commit()
-              conn.close()
-              EOF
+          image: quay.io/rcarrata/calendar-api:v1
+          command: ["python3", "build.py"]
           volumeMounts:
             - name: calendar-db-volume
-              mountPath: /data
+              mountPath: /app/CalendarDB.db
+              subPath: CalendarDB.db
+          env:
+            - name: CONFIG_PATH
+              value: "/app/db.conf"

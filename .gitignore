@@ -51,5 +51,4 @@ lab-materials/04/runs/*
 
 # agents
 agents/calendar-api/__pycache__
-agents/calendar-api/CalendarDB.db
-agents/calendar-api/sqlite_data/
+agents/calendar-api/src/CalendarDB.db

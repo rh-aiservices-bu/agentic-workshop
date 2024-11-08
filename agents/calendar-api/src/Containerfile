@@ -9,11 +9,7 @@ RUN microdnf install -y python3 python3-pip sqlite && \
 WORKDIR /app
 
 # Copy the requirements.txt and app code into the container
-COPY ./requirements.txt /app/
-COPY database_handler.py /app/
-COPY method.py /app/
-COPY db.conf /app/
-COPY server.py /app/
+COPY . /app/
 
 # Install Python dependencies using pip
 RUN pip3 install --upgrade pip && \
