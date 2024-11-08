@@ -1,0 +1,24 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: weather-app
+  labels:
+    app: weather-app
+    app.kubernetes.io/component: weather-app
+    app.kubernetes.io/instance: weather-app
+    app.kubernetes.io/name: weather-app
+spec:
+  ipFamilies:
+    - IPv4
+  ports:
+    - name: 8000-tcp
+      protocol: TCP
+      port: 8000
+      targetPort: 8000
+  internalTrafficPolicy: Cluster
+  type: ClusterIP
+  ipFamilyPolicy: SingleStack
+  sessionAffinity: None
+  selector:
+    app: weather-app
+    deployment: weather-app
