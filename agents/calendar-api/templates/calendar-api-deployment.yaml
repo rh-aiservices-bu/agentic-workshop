@@ -14,13 +14,14 @@ spec:
     spec:
       containers:
         - name: calendar-api
-          image: calendar-api:v2
+          image: calendar-api:v1
           ports:
             - containerPort: 8000
           volumeMounts:
-            - mountPath: /app/db
-              name: sqlite-storage
+            - name: calendar-db-volume
+              mountPath: /app/CalendarDB.db
+              subPath: CalendarDB.db
       volumes:
-        - name: sqlite-storage
+        - name: calendar-db-volume
           persistentVolumeClaim:
-            claimName: sqlite-pvc
+            claimName: calendar-db-pvc

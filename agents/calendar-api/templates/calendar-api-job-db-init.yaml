@@ -1,0 +1,43 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: db-init-job
+spec:
+  template:
+    metadata:
+      name: db-init-job
+    spec:
+      restartPolicy: OnFailure
+      volumes:
+        - name: calendar-db-volume
+          persistentVolumeClaim:
+            claimName: calendar-db-pvc
+      containers:
+        - name: init-container
+          image: python:3.11-slim
+          command: ["sh", "-c"]
+          args:
+            - |
+              python3 - <<EOF
+              import sqlite3
+              conn = sqlite3.connect('/data/CalendarDB.db')
+              cursor = conn.cursor()
+              cursor.execute('''
+                  CREATE TABLE IF NOT EXISTS calendar (
+                      sid TEXT PRIMARY KEY,
+                      name TEXT,
+                      content TEXT,
+                      category TEXT,
+                      level INTEGER,
+                      status REAL,
+                      creation_time TEXT,
+                      start_time TEXT,
+                      end_time TEXT
+                  )
+              ''')
+              conn.commit()
+              conn.close()
+              EOF
+          volumeMounts:
+            - name: calendar-db-volume
+              mountPath: /data
