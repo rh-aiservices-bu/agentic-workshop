@@ -36,7 +36,7 @@
 
 * 6. Advanced Agentic AI
 ** xref:06-01-react-implementation.adoc[6.1 ReAct Implementation]
-** xref:06-02-supervision-pm.adoc[6.2 Supervision & PM Implementation (PM)]
+** xref:06-02-human-loop.adoc[6.2 Human in the Loop]
 ** xref:06-03-building-supervisors.adoc[6.3 Building Supervisors]
 ** xref:06-04-hierarchical-team-agents.adoc[6.4 Hierarchical Team Agents]
 

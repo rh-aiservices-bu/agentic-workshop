@@ -1,5 +1,0 @@
-= Supervision PM
-include::_attributes.adoc[]
-:slide:
-
-TBD
