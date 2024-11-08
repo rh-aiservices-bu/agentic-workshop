@@ -6,7 +6,7 @@ include::_attributes.adoc[]
 
 **Chain of Thought** (CoT) is a concept in natural language processing (NLP) that enables language models to reason through tasks in a structured, step-by-step manner, similar to human thinking. Rather than generating isolated responses, a model using Chain of Thought builds on prior information, creating responses that follow a logical flow and ensuring a coherent, context-aware dialogue. This approach is particularly valuable in complex or multi-step queries, where understanding and maintaining context over multiple interactions is essential.
 
-image::04/04-03-cot-diagram.png[Chain of Thought, scaledwidth="5%"]
+image::03/04-03-cot-diagram.png[Chain of Thought, scaledwidth="20%"]
 
 == Why Chain of Thought Matters
 
@@ -19,6 +19,8 @@ In traditional LLM models, responses can sometimes feel disjointed or context-fr
 == Examples of Chain of Thought in Action
 
 Imagine a healthcare chatbot asked, “What are the symptoms of diabetes, and how is it treated?” With Chain of Thought, the chatbot can sequence its response by first listing symptoms, then moving to treatment options, making the information easier to understand. Similarly, in customer support, a Chain of Thought approach allows a bot to acknowledge an issue, check the order status, and suggest solutions in a logical order.
+
+image::03/03-02-cot.png[Chain of Thought, scaledwidth="50%"]
 
 == Enhancing LLMs Performance with Chain of Thought
 

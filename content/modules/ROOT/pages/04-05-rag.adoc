@@ -14,6 +14,8 @@ In a RAG setup, the model follows a two-step process:
 
 2. **Generation**: The retrieved information is then combined with the model’s own knowledge to generate a final, context-aware response. By incorporating up-to-date data, the model can provide more accurate answers and handle queries that would otherwise be outside its scope.
 
+image::04/04-04-rag.jpg[RAG]
+
 == Benefits of RAG
 
 - **Enhanced Accuracy**: RAG reduces reliance on outdated or incomplete training data, leading to more accurate and contextually relevant responses.
