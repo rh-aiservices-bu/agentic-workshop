@@ -2,4 +2,24 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+In this section, we explore common patterns in LLM applications that enhance the model's capabilities without relying on agent-based control flows. These non-agentic patterns focus on leveraging the strengths of LLMs in structured and predictable ways.
+
+== 4.1 Chain of Thought
+- Fosters logical reasoning by prompting the LLM to break down tasks step-by-step.
+- Improves coherence and context retention in multi-step problem-solving scenarios.
+- Enhances the model's ability to generate structured, sequential responses.
+
+== 4.2 Tools Usage from LLM Perspective
+- Involves the LLM invoking external tools (e.g., APIs, search engines) to gather information.
+- Supports tasks requiring real-time data retrieval, complex computations, or system interactions.
+- Extends the LLM's functionality beyond its static training data.
+
+== 4.3 ReAct Prompting
+- Combines reasoning and action steps, guiding the LLM to think and act iteratively.
+- Uses a Thought → Action → Observation loop for dynamic task execution.
+- Enhances decision-making by integrating external information into the reasoning process.
+
+== 4.4 Retrieval Augmented Generation (RAG)
+- Merges information retrieval with response generation, grounding the LLM’s answers in real-time data.
+- Retrieves relevant documents or knowledge snippets to enhance response accuracy.
+- Ideal for applications needing up-to-date or domain-specific information, reducing hallucination risks.
