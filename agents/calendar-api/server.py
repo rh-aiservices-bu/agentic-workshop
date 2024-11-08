@@ -14,12 +14,13 @@ info = config['DEFAULT']
 dbh = database_handler.DatabaseHandler(db_name=info['db_name'], check_same_thread=False)
 m = method.Method(conf_file='db.conf')
 
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],  # The origin of your React frontend
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
 )
 
 class Schedule(BaseModel):
