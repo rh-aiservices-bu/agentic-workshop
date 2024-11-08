@@ -10,7 +10,10 @@ WORKDIR /app
 
 # Copy the requirements.txt and app code into the container
 COPY ./requirements.txt /app/
-COPY . /app/
+COPY database_handler.py /app/
+COPY method.py /app/
+COPY db.conf /app/
+COPY server.py /app/
 
 # Install Python dependencies using pip
 RUN pip3 install --upgrade pip && \
@@ -20,4 +23,4 @@ RUN pip3 install --upgrade pip && \
 EXPOSE 8000
 
 # Command to run the FastAPI application using Uvicorn
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]

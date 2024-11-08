@@ -21,3 +21,10 @@ A simple calendar API powered by FastAPI.
 3. Run `python build.py` to create a SQLite database (only run for the first time)
 4. Run `uvicorn server:app --reload --host 127.0.0.1 --port 8000 --workers 4 --limit-concurrency 100 --timeout-keep-alive 5`
 5. Run test code in `client.py`, or try it out on `http://127.0.0.1:8000/docs`
+
+## Local Development
+
+```md
+python build.py
+docker run -d --name calendar-api -p 8000:8000 -v $(pwd)/CalendarDB.db:/app/CalendarDB.db calendar-api:v1
+```

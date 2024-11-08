@@ -33,7 +33,7 @@ if __name__ == '__main__':
     i = Interface(url, 'schedules')
 
     data = {
-        "sid": "2",
+        "sid": "4",
         "name": "John Doe",
         "content": "Test",
         "category": "Business",

@@ -51,15 +51,17 @@ const Calendar = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    // Automatically set the creation_time to the current date and time
+    // Automatically set the creation_time and generate a unique sid
     const currentDateTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+    const uniqueSid = `${Date.now()}`; // Use the current timestamp as a unique ID
 
     // Prepare the schedule data with correct types
     const formattedSchedule = {
       ...newSchedule,
+      sid: uniqueSid,
       creation_time: currentDateTime,
-      status: parseFloat(newSchedule.status), // Ensure status is a float
-      level: parseInt(newSchedule.level),     // Ensure level is an integer
+      status: parseFloat(newSchedule.status),
+      level: parseInt(newSchedule.level),
     };
 
     try {
