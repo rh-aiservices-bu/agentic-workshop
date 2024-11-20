@@ -10,7 +10,7 @@ asciidoc:
     page-pagination: true
     experimental:
     numbered:
-    lab_name: "AI Agents in Red Hat OpenShift AI!"
+    lab_name: "Agentic AI in Red Hat OpenShift AI!"
     guid: my-guid
     ssh_user: lab-user
     ssh_password: lab-user
