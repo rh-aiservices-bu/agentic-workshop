@@ -30,10 +30,10 @@ image::05/05-01-tool-calling.png[Tool Calling]
 
 ## Key Features for Custom Agent Architectures
 
-- **Human-in-the-Loop**: Involves human oversight for critical decisions, such as approving actions or editing the agent’s state. This is crucial for sensitive tasks where full automation may not be desirable.
-- **Parallelization**: Supports concurrent processing of multiple tasks, optimizing efficiency in complex multi-agent systems.
-- **Subgraphs**: Enable modular design by managing isolated state for individual agents, allowing for hierarchical organization and controlled communication.
-- **Reflection**: Provides feedback for self-correction, evaluating task completion and improving agent reliability through iterative learning.
+   - **Human-in-the-Loop**: Involves human oversight for critical decisions, such as approving actions or editing the agent’s state. This is crucial for sensitive tasks where full automation may not be desirable.
+   - **Parallelization**: Supports concurrent processing of multiple tasks, optimizing efficiency in complex multi-agent systems.
+   - **Subgraphs**: Enable modular design by managing isolated state for individual agents, allowing for hierarchical organization and controlled communication.
+   - **Reflection**: Provides feedback for self-correction, evaluating task completion and improving agent reliability through iterative learning.
 
 ## Memory and Planning
 
