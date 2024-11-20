@@ -1,5 +1,5 @@
 site:
-  title: "AI Agents in Red Hat OpenShift AI!"
+  title: "Agentic AI in Red Hat OpenShift AI!"
   url: https://redhat-scholars.github.io/course-template
   start_page: modules::index.adoc
 

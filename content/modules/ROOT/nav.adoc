@@ -11,7 +11,7 @@
 ** xref:02-03-what-is-agentic-ai.adoc[2.3 What is Agentic AI?]
 ** xref:02-04-why-should-care-agents.adoc[2.3 Why is it important to my organization?]
 
-* 3. AI Agent Frameworks
+* 3. Agentic AI Frameworks
 ** xref:03-01-ai-agent-frameworks.adoc[3.1 AI Agents Frameworks]
 ** xref:03-02-langgraph.adoc[3.2 LangGraph]
 ** xref:03-03-autogen-framework.adoc[3.3 AutoGen Framework]
@@ -26,7 +26,7 @@
 ** xref:04-04-react-prompting.adoc[4.4 React Prompting]
 ** xref:04-05-rag.adoc[4.5 Retrieval Augmented Generation (RAG)]
 
-* 5. Agent-Based Integrations
+* 5. Agentic-AI-Based Integrations
 ** xref:05-01-agentic-integrations.adoc[5.1 Agentic Integrations]
 ** xref:05-02-what-is-an-agent.adoc[5.2 What is an Agent?]
 ** xref:05-03-routing-collaboration.adoc[5.3 Routing & Collaboration (AI Agents & Single LLM)]

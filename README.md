@@ -1,2 +1,2 @@
 # agentic-workshop
-Workshop for AI Agents within Red Hat AI
+Workshop for Agentic AI within Red Hat AI
