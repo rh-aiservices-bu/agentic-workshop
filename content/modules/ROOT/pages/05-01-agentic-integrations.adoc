@@ -38,6 +38,7 @@ image::05/05-01-tool-calling.png[Tool Calling]
 ## Memory and Planning
 
 Memory is vital for effective agent behavior:
+
    - **Short-term Memory**: Tracks information within a single session, allowing the agent to maintain context.
    - **Long-term Memory**: Stores data across sessions, enabling the agent to recall previous interactions.
 
