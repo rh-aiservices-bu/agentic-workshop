@@ -11,7 +11,7 @@ At a high level, AI agents can be designed to manage workflows, respond to human
 
 In this workshop, we’ll review on five prominent AI agent frameworks:
 
-1. **LangChain**
+1. **LangGraph**
 2. **AutoGen**
 3. **Llama Index**
 4. **CrewAI**
