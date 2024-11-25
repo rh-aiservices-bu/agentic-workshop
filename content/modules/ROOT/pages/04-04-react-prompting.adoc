@@ -18,20 +18,10 @@ For more in-depth information, see the original research paper on ReAct promptin
 
 image::04/04-01-react-basic.png[ReAct Basic]
 
-== How Does ReAct Prompting Work?
+== Exercise: ReAct Pattern - Practical Example
 
-ReAct prompting follows a structured **Thought → Action → Observation** loop, which iteratively improves the model's response accuracy and relevance. Here’s how it works:
+Let's see the ReAct Pattern in Action!
 
-1. **Thought**: The model reasons about the task at hand, deciding which action will most effectively address the next step.
-  
-2. **Action**: Based on its reasoning, the model executes the chosen action, whether it’s querying an API, performing a calculation, or retrieving specific data.
+From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.2-react-prompting-redhatAI.ipynb` and follow the instructions.
 
-3. **Observation**: The model observes the results of the action, updates its internal reasoning based on the new information, and determines whether additional steps are needed.
-
-This loop continues until the model has gathered enough information to generate a complete, accurate response or decides that no further actions are required.
-
-image::04/04-02-react-diagram.png[ReAct Diagram]
-
-== Example Use Cases
-
-For example, in our notebook, we’ll use ReAct prompting to 
+NOTE: If you're on PodmanAI, choose the `podmanAI` version.

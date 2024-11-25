@@ -1,5 +1,65 @@
-= Examples from prototype
-include::_attributes.adoc[]
-:slide:
+= Examples from Prototyping Work  
+:slide:  
 
-TBD
+## AI-Driven Solutions for the Financial Domain  
+
+=== **1. Text Summarization**  
+*Purpose*: Quickly summarize client inquiries or market reports.  
+
+_Input_: "Client requests a breakdown of sector performance in Q3 2024."  
+_Output_: "Client needs Q3 2024 sector performance overview for decision-making."  
+
+*Impact*:  
+- Speeds up response time.  
+- Reduces cognitive load for analysts.  
+
+=== **2. Information Extraction**  
+*Purpose*: Automatically extract key metrics from unstructured data.  
+
+_Input_: "Revenue: $10M, Expenses: $7M, Profit: $3M."  
+_Output_: { Revenue: "$10M", Expenses: "$7M", Profit: "$3M" }  
+
+*Impact*:  
+- Faster data handling.  
+- Reduces manual entry errors.  
+
+=== **3. Sentiment Analysis**  
+*Purpose*: Identify urgency in client communications.  
+
+_Input_: "Your delay on this report is unacceptable."  
+_Output_: Sentiment: Negative | Action: Escalate.  
+
+*Impact*:  
+- Helps prioritize critical tasks.  
+- Improves client satisfaction.  
+
+=== **4. Financial Data Recognition**  
+*Purpose*: Automate financial metric extraction from files.  
+
+_Input_: Spreadsheet with revenue and expenses.  
+_Output_: "Detected: Revenue = $15M, Expenses = $10M, Margin = 33%."  
+
+*Impact*:  
+- Reduces processing time.  
+- Enhances accuracy in reporting.  
+
+=== **5. Customer Portal Support**  
+*Purpose*: Automate responses to common client queries.  
+
+_Input_: "How do I access last month's data?"  
+_Output_: "Go to 'Reports > Last Month' and click 'Download.'"  
+
+*Impact*:  
+- Automates repetitive tasks.  
+- Frees up customer service engineers.  
+
+=== **6. Centralized Web Application**  
+*Purpose*: Integrate AI tools into a unified interface.  
+
+_Features_:  
+- Dashboard for data summarization and extraction.  
+- Portal for client query management.  
+
+*Impact*:  
+- Streamlines workflows.  
+- Improves collaboration across teams.  

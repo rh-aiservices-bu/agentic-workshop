@@ -1,0 +1,32 @@
+= Chain of thought
+include::_attributes.adoc[]
+:slide:
+
+== Overview
+
+**Chain of Thought** (CoT) is a concept in natural language processing (NLP) that enables 
+language models to reason through tasks in a structured, step-by-step manner, similar to human 
+thinking. Rather than generating isolated responses, a model using Chain of Thought builds on 
+prior information, creating responses that follow a logical flow and ensuring a coherent, 
+context-aware dialogue. This approach is particularly valuable in complex or multi-step queries,
+where understanding and maintaining context over multiple interactions is essential.
+
+image::04/04-03-cot-diagram.png[Chain of Thought, scaledwidth="3%"]
+
+== Examples of Chain of Thought in Action
+
+Imagine a healthcare chatbot asked, “What are the symptoms of diabetes, and how is it treated?” 
+With Chain of Thought, the chatbot can sequence its response by first listing symptoms, then moving 
+to treatment options, making the information easier to understand. Similarly, in customer support, a 
+Chain of Thought approach allows a bot to acknowledge an issue, check the order status, and suggest 
+solutions in a logical order.
+
+image::04/04-02-cot.png[Chain of Thought, scaledwidth="20%"]
+
+== Exercise: Chain of Thought - Practical Example
+
+Let's see the Chain of Thought in Action!
+
+From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.2-chain-of-thought-redhatAI.ipynb` and follow the instructions.
+
+NOTE: If you're on PodmanAI, choose the `podmanAI` version.

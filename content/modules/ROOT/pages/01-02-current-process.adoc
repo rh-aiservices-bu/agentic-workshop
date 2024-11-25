@@ -1,5 +1,81 @@
-= Current process
-include::_attributes.adoc[]
-:slide:
+= Current Process  
+include::_attributes.adoc[]  
+:slide:  
 
-TBD
+## Overview of the Current Process  
+
+Crystal Sphere Insights (C-Sphere) manages its operations in a **manual, labor-intensive workflow**. 
+While functional, this process introduces inefficiencies that hinder client satisfaction, operational 
+scalability, and overall productivity, especially in key areas like report delivery and customer support 
+related to business intelligence portals.  
+
+---
+
+### **Process Steps**  
+
+1. **Data Collection**  
+   - Data is collected from multiple sources, including market feeds, client inputs, and internal analytics.  
+   - Formats vary widely (e.g., spreadsheets, PDFs, client emails, and portal queries).  
+   - **Customer Support Engineers** field client inquiries about portal functionality, troubleshooting 
+   technical issues manually.  
+
+2. **Data Consolidation**  
+   - Analysts manually aggregate data from disparate sources.  
+   - Customer support engineers often assist with structuring portal-related queries for proper resolution.  
+   - Resolving inconsistencies requires significant time and human intervention.  
+
+3. **Insights Development**  
+   - Analysts examine the consolidated data to uncover trends and develop actionable insights.  
+   - Client-specific nuances rely heavily on tribal knowledge, resulting in variability in report quality.  
+
+4. **Report Generation**  
+   - Data is translated into client-facing reports.  
+   - Formatting, validation, and error-checking are manual, adding delays and creating opportunities 
+   for mistakes.  
+
+5. **Report Delivery & Customer Interaction**  
+   - Reports are delivered via email or uploaded to portals.  
+   - Customer service engineers address portal issues and manually document feedback.  
+   - Feedback patterns are not systematically analyzed to improve workflows.  
+
+---
+
+### **Challenges**  
+
+#### **1. Repetitive and Manual Processes**  
+- Manual data collection, consolidation, and troubleshooting lead to delays.  
+- Analysts and customer service engineers experience fatigue, increasing the likelihood of errors.  
+
+#### **2. Ineffective Feedback Management**  
+- Client feedback related to both reports and portals is handled manually.  
+- Lack of a centralized system prevents actionable insights from being derived from feedback.  
+
+#### **3. Scalability and Knowledge Transfer Issues**  
+- Growing client demand exacerbates inefficiencies.  
+- Training for new hires, including customer service engineers, is slow and heavily dependent on 
+tribal knowledge.  
+
+#### **4. Limited Customer Support Automation**  
+- Portal-related queries and troubleshooting require substantial manual intervention.  
+- Lack of AI tools limits the ability to address repetitive inquiries efficiently.  
+
+---
+
+### **Impact on Business**  
+
+- **Client Experience**: Delayed responses to portal issues and inconsistent report quality impact 
+client trust.  
+- **Operational Inefficiency**: Time and resources spent on repetitive tasks reduce the ability to 
+focus on innovation.  
+- **Innovation Gap**: Processes are too rigid to quickly adopt new technology.  
+
+---
+
+### **Next Steps**  
+
+Crystal Sphere Insights aims to explore **agentic AI solutions** to address these challenges. 
+Proposed improvements include:  
+- Automating repetitive data handling and troubleshooting tasks.  
+- Enhancing client interaction workflows using natural language processing and intelligent automation.  
+- Integrating real-time feedback systems to improve report quality and portal functionality.  
+- Enabling scalable operations through knowledge transfer tools and centralized insights development.  

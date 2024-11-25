@@ -1,5 +1,49 @@
-= Proposed improvements
-include::_attributes.adoc[]
-:slide:
+= Proposed Improvements & Examples from Prototype
+:slide:  
 
-TBD
+## Progressive Improvements for Claims Processing  
+
+### **Implementation Approach**  
+A step-wise implementation of AI/ML tools is proposed to assist claims adjusters in their workflow. This progressive strategy ensures seamless integration, minimizes disruption, and allows iterative optimization based on performance metrics.  
+
+---
+
+### **Key Recommendations**  
+
+#### **1. Automate Low-Level, Repetitive Tasks**  
+- Use AI to handle repetitive, time-consuming tasks such as data parsing, transcription, and extraction.  
+- Provide clear, actionable recommendations for claims that require human review.  
+- Mitigate fatigue by reducing the burden of manual input.  
+
+#### **2. Enhance Data Extraction and Review**  
+- Deploy natural language processing (NLP) techniques to parse incoming claims from email, fax, or phone transcriptions into structured formats.  
+- Utilize AI-driven tools to summarize key points for faster decision-making.  
+
+#### **3. Support Fraud Detection**  
+- Implement AI models that flag potential fraud patterns for adjuster review.  
+- Integrate sentiment analysis to detect tone and anomalies in claims submissions.  
+
+#### **4. Image Recognition for Damage Assessment**  
+- Use computer vision to analyze images for vehicle damage, assessing severity and providing baseline grading for adjuster review.  
+- Automate framing and detection of vehicles in customer-submitted photos.  
+
+#### **5. Centralized Claims Processing Application**  
+- Develop a web-based application that integrates AI tools for a unified, user-friendly experience.  
+- Ensure all tools, including data extraction, fraud detection, and image recognition, are accessible within this platform.  
+
+---
+
+### **Goals**  
+
+- Reduce average processing time from **7 hours/claim to 2 hours/claim**.  
+- Decrease human errors by **80%** through automated checks and guided workflows.  
+- Enhance fraud detection by **25%** using advanced machine learning models.  
+
+---
+
+### **Performance Monitoring Requirements**  
+
+- Establish precise baseline measurements of current process metrics.  
+- Evaluate improvements iteratively after each tool integration.  
+- Collect feedback from adjusters to refine tools and enhance user experience.  
+
