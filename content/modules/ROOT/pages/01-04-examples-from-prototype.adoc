@@ -1,65 +1,43 @@
-= Examples from Prototyping Work  
-:slide:  
-
-## AI-Driven Solutions for the Financial Domain  
+## Examples from Prototyping Work  
 
 === **1. Text Summarization**  
-*Purpose*: Quickly summarize client inquiries or market reports.  
+*Purpose*: Summarize lengthy financial reports or client inquiries for quick understanding.  
 
-_Input_: "Client requests a breakdown of sector performance in Q3 2024."  
-_Output_: "Client needs Q3 2024 sector performance overview for decision-making."  
+* _Input_: "Client wants a detailed report on Q3 2024 sector performance."  
+* _Output_: "Client needs Q3 2024 sector performance summary for decision-making."  
 
-*Impact*:  
-- Speeds up response time.  
-- Reduces cognitive load for analysts.  
+*Impact*: Saves time for analysts by condensing complex information.  
 
 === **2. Information Extraction**  
-*Purpose*: Automatically extract key metrics from unstructured data.  
+*Purpose*: Automatically extract key data from unstructured inputs.  
 
-_Input_: "Revenue: $10M, Expenses: $7M, Profit: $3M."  
-_Output_: { Revenue: "$10M", Expenses: "$7M", Profit: "$3M" }  
+* _Input_: "Revenue: $12M, Expenses: $8M, Profit: $4M."  
+* _Output_: { Revenue: "$12M", Expenses: "$8M", Profit: "$4M" }  
 
-*Impact*:  
-- Faster data handling.  
-- Reduces manual entry errors.  
+*Impact*: Reduces manual effort and ensures accuracy in reports.  
 
 === **3. Sentiment Analysis**  
-*Purpose*: Identify urgency in client communications.  
+*Purpose*: Identify urgency or dissatisfaction in client communications.  
 
-_Input_: "Your delay on this report is unacceptable."  
-_Output_: Sentiment: Negative | Action: Escalate.  
+* _Input_: "We've waited weeks for this analysis; please expedite."  
+* _Output_: Sentiment: Negative | Action: Prioritize.  
 
-*Impact*:  
-- Helps prioritize critical tasks.  
-- Improves client satisfaction.  
+*Impact*: Helps prioritize critical client interactions, improving satisfaction.  
 
 === **4. Financial Data Recognition**  
-*Purpose*: Automate financial metric extraction from files.  
+*Purpose*: Automate the extraction of key metrics from documents.  
 
-_Input_: Spreadsheet with revenue and expenses.  
-_Output_: "Detected: Revenue = $15M, Expenses = $10M, Margin = 33%."  
+* _Input_: Financial report PDF with revenue and expenses.  
+* _Output_: { Revenue: "$10M", Expenses: "$7M", Margin: "30%" }  
 
-*Impact*:  
-- Reduces processing time.  
-- Enhances accuracy in reporting.  
+*Impact*: Speeds up analysis and benchmarking for faster insights.  
 
-=== **5. Customer Portal Support**  
-*Purpose*: Automate responses to common client queries.  
+=== **5. Centralized Financial Platform**  
+*Purpose*: Integrate tools into a single interface for analysts and support engineers.  
 
-_Input_: "How do I access last month's data?"  
-_Output_: "Go to 'Reports > Last Month' and click 'Download.'"  
+* _Features_:  
+  * Summarized insights dashboard.  
+  * Automated client query handling.  
+  * Real-time anomaly detection.  
 
-*Impact*:  
-- Automates repetitive tasks.  
-- Frees up customer service engineers.  
-
-=== **6. Centralized Web Application**  
-*Purpose*: Integrate AI tools into a unified interface.  
-
-_Features_:  
-- Dashboard for data summarization and extraction.  
-- Portal for client query management.  
-
-*Impact*:  
-- Streamlines workflows.  
-- Improves collaboration across teams.  
+*Impact*: Streamlines workflows and enhances cross-departmental collaboration.  

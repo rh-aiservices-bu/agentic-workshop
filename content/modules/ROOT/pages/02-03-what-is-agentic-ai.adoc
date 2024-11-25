@@ -5,7 +5,7 @@ include::_attributes.adoc[]
 
 In these systems, large language models (LLMs) serve as the "brain" of the agent, guiding it through processes like planning, decision-making, and tool usage. By understanding the context of their environment and objectives, these agents can carry out sophisticated workflows without frequent human intervention.
 
-image::02/02-01-agentic-vs-non-agentic.png[AI Agents Diagram]
+image::03/03-01-ai-agents-diagram.png[AI Agents Frameworks, scaledwidth="40%"]
 
 Agentic AI agents are also capable of self-correction and iterative improvement. They learn from their actions and adapt their responses as they gather more information, making them efficient problem solvers that require minimal human oversight. This adaptability allows them to tackle complex, multi-step tasks with a high degree of autonomy, paving the way for innovative applications in fields such as customer service, process automation, and dynamic content generation.
 

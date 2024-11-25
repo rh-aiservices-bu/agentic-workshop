@@ -8,23 +8,26 @@
 We are all part of *Crystal Sphere Insights (C-Sphere)*, a global leader in financial services intelligence.  
 
 ### **C-Sphere Specializations**  
-- **Business Intelligence**: Delivering actionable insights tailored for the financial sector.  
-- **Market Analytics**: Providing cutting-edge analysis of market trends and dynamics.  
-- **Benchmarking Solutions**: Offering comparative data to guide strategic decision-making.  
+* **Business Intelligence**: Delivering actionable insights tailored for the financial sector.  
+* **Market Analytics**: Providing cutting-edge analysis of market trends and dynamics.  
+* **Benchmarking Solutions**: Offering comparative data to guide strategic decision-making.  
 
 === A Company in Transformation  
 
 To remain competitive in an evolving landscape, C-Sphere is undergoing a *digital transformation*. This initiative focuses on:  
-- **Modernizing Workflows**: Improving efficiency and fostering innovation.  
-- **Integrating Advanced Technologies**: Leveraging AI to stay ahead of industry trends.  
-- **Elevating Client Satisfaction**: Providing faster, smarter insights to clients.  
 
-### **Key Roles at C-Sphere**  
-The company’s diverse workforce drives its transformation, including:  
-- **Financial Analysts**: Delivering expert insights and advising clients using in-depth market data.  
-- **Customer Service Engineers**:  
-  - Dedicated to solving customer inquiries related to data delivery and functionality of business intelligence portals.  
-  - Supporting clients in accessing actionable insights, resolving technical issues, and optimizing their use of C-Sphere’s platforms.  
+* **Modernizing Workflows**: Improving efficiency and fostering innovation.  
+* **Integrating Advanced Technologies**: Leveraging AI to stay ahead of industry trends.  
+* **Elevating Client Satisfaction**: Providing faster, smarter insights to clients.  
+
+### **Key Roles at C-Sphere** 
+
+The company’s diverse workforce drives its transformation, including:
+
+* **Financial Analysts**: Delivering expert insights and advising clients using in-depth market data.  
+* **Customer Service Engineers**:  
+** Dedicated to solving customer inquiries related to data delivery and functionality of business intelligence portals.  
+** Supporting clients in accessing actionable insights, resolving technical issues, and optimizing their use of C-Sphere’s platforms.  
 
 ---
 
@@ -36,18 +39,19 @@ A cross-functional team of four employees has been tasked with addressing a crit
 2. Identify inefficiencies and areas for improvement in workflows.  
 3. Propose actionable solutions to modernize and optimize operations.  
 
-The team must present their findings to the executive board, with the following goals:  
-- **Highlight Impacts**: Showcase how inefficiencies in delivering insights affect productivity and client satisfaction.  
-- **Recommend Innovations**: Propose solutions, such as agentic AI, to streamline reporting, enhance client interactions, and improve decision-making speed.  
+* The team must present their findings to the executive board, with the following goals:
+* **Highlight Impacts**: Showcase how inefficiencies in delivering insights affect productivity and client satisfaction.  
+* **Recommend Innovations**: Propose solutions, such as agentic AI, to streamline reporting, enhance client interactions, and improve decision-making speed.  
 
 ---
 
 == Opportunity  
 
-Success in the presentation to the board could result in:  
-- **Green Light for AI Pilot Project**: Launching a full-scale initiative to integrate agentic AI frameworks.  
-- **Funding for Modernization**: Securing resources to upgrade tools and workflows across departments.  
-- **Competitive Positioning**: Establishing C-Sphere as a technology-driven leader in business intelligence.  
+Success in the presentation to the board could result in:
+
+* **Green Light for AI Pilot Project**: Launching a full-scale initiative to integrate agentic AI frameworks.  
+* **Funding for Modernization**: Securing resources to upgrade tools and workflows across departments.  
+* **Competitive Positioning**: Establishing C-Sphere as a technology-driven leader in business intelligence.  
 
 The stakes are high. These recommendations will shape the company’s ability to maintain its competitive edge in a rapidly digitizing industry.  
 

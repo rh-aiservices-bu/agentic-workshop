@@ -14,3 +14,17 @@ In order to make this {ic-lab} seem more realistic, we will be describing this i
 - **Text Generation**: One of the core abilities of LLMs is to generate coherent and relevant text based on a given prompt. They can complete sentences, provide responses to questions, and even create entirely new content on a variety of topics.
 
 - **Versatile Tasks**: LLMs are capable of performing a wide range of language-related tasks, such as translation, summarization, question answering, and creative writing. This versatility makes them useful across industries, from customer service automation to content generation and research support.
+
+== Exercise: LLM Usage - Practical Example
+
+Let's see the Tools Usage in Action!
+
+From the `agentic-workshop/lab-materials/01` folder, please open the notebook called `1.0-basic-llm-prompt-redhatAI.ipynb` and follow the instructions.
+
+NOTE: If you're on PodmanAI, choose the `podmanAI` version.
+
+== Exercise: LLM Usage with Memory - Practical Example
+
+From the `agentic-workshop/lab-materials/01` folder, please open the notebook called `1.1-basic-llm-prompt-memory-redhatAI.ipynb` and follow the instructions.
+
+NOTE: If you're on PodmanAI, choose the `podmanAI` version.
