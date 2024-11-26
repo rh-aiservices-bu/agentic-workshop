@@ -22,6 +22,4 @@ image::04/04-01-react-basic.png[ReAct Basic]
 
 Let's see the ReAct Pattern in Action!
 
-From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.2-react-prompting-redhatAI.ipynb` and follow the instructions.
-
-NOTE: If you're on PodmanAI, choose the `podmanAI` version.
+From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `2.3-react-prompting.ipynb` and follow the instructions.

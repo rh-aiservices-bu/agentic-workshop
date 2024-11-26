@@ -27,8 +27,8 @@
 ** xref:04-05-rag.adoc[4.5 Retrieval Augmented Generation (RAG)]
 
 * 5. Agentic-AI-Based Integrations
-** xref:05-01-agentic-integrations.adoc[5.1 Agentic Integrations]
-** xref:05-02-what-is-an-agent.adoc[5.2 What is an Agent?]
+** xref:05-01-what-is-an-ai-agent.adoc[5.1 What is an AI Agent?]
+** xref:05-02-agentic-architectures.adoc[5.1 Agentic Architectures]
 ** xref:05-03-routing-collaboration.adoc[5.3 Routing & Collaboration (AI Agents & Single LLM)]
 ** xref:05-04-routing-single-llm-agent-tools.adoc[5.4 Routing (Single LLM + Single Agent & Multiple Tools)]
 ** xref:05-05-collaboration-single-llm-agents.adoc[5.5 Collaboration (Single LLM & Multiple Agents)]

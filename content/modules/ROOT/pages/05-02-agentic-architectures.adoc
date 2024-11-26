@@ -1,15 +1,16 @@
-= Agentic integrations
+= Agentic Architectures
 include::_attributes.adoc[]
 :slide:
 
 Many LLM applications rely on a predefined control flow before and after LLM calls, such as **Retrieval-Augmented Generation (RAG)**, which retrieves relevant documents to ground the model’s response. However, when dealing with more complex tasks, fixed control flows may not be sufficient. In these cases, we use **agents**: systems that leverage LLMs to dynamically decide the control flow of an application.
 
-## What Are Agents?
+## How AI Agent works?
 
 An **agent** uses an LLM to control the flow of an application based on the problem at hand. The LLM can:
-* **Route** between different execution paths.
-* **Choose Tools** to call for specific tasks.
-* **Evaluate Responses** to determine if further actions are needed.
+
+- **Route** between different execution paths.
+- **Choose Tools** to call for specific tasks.
+- **Evaluate Responses** to determine if further actions are needed.
 
 This flexibility allows agents to solve a wider range of problems, adapting their control flow as necessary.
 

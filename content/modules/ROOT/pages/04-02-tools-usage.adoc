@@ -20,9 +20,7 @@ Through tool calling, LLMs can:
 
 Let's see the Tools Usage in Action!
 
-From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.1-tools-calling-redhatAI.ipynb` and follow the instructions.
-
-NOTE: If you're on PodmanAI, choose the `podmanAI` version.
+From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.1-tools-calling.ipynb` and follow the instructions.
 
 == Benefits of Using Tools with LLMs
 

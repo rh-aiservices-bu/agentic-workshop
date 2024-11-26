@@ -2,6 +2,9 @@
 .idea/
 .vscode/
 
+# MaaS Env
+*.env
+
 # misc
 .DS_Store
 
