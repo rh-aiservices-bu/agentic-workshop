@@ -4,7 +4,9 @@ include::_attributes.adoc[]
 
 == Overview
 
-An Agent is an autonomous system that leverages Large Language Models (LLMs) to perform tasks by understanding, reasoning, planning, and executing actions with minimal human intervention. AI agents are designed to break down complex problems into manageable steps, utilizing tools, accessing memory, and adapting their behavior based on the provided context.
+An Agent is an autonomous system that leverages Large Language Models (LLMs) to perform tasks by understanding, 
+reasoning, planning, and executing actions with minimal human intervention. AI agents are designed to break down 
+complex problems into manageable steps, utilizing tools, accessing memory, and adapting their behavior based on the provided context.
 
 At its core, an agent is structured to:
 
@@ -26,3 +28,18 @@ image::02/02-01-agentic-vs-non-agentic.png[AI Agents Diagram]
 - **Planning Module**: This module allows the agent to break down complex tasks into smaller, manageable sub-tasks. By planning step-by-step, the agent can tackle intricate queries and tasks with greater efficiency and precision.
 
 image::02/02-02-agentic-components.png[AI Agents Diagram]
+
+== Anatomy of an AI Agent:
+
+The Anatomy of an AI Agent consists of interconnected components such as: 
+- Persona 
+- Instruction
+- Task & Planning
+- Memory 
+- Tools
+- Delegation
+
+which collectively enable the agent to perform tasks, manage strategies, and make 
+decisions effectively within its defined context.
+
+image::05/05-06-agent-framework.png[Agentic Integrations]
