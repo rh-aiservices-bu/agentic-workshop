@@ -1,5 +1,59 @@
-= React implementation
+= ReAct Agents
 include::_attributes.adoc[]
 :slide:
 
-TBD
+ReAct Agents are an advanced implementation within the Agentic AI paradigm, designed to synergize reasoning and acting for solving tasks in a structured, iterative manner. This document explores the principles, effectiveness, and architectural components of ReAct Agents, ensuring their adaptability across different environments and use cases.
+
+== Building a ReAct Agent
+
+ReAct Agents leverage a modular architecture that enables them to reason, plan, and act effectively. 
+
+image::04/04-01-react-basic.png[ReAct Basic]
+
+Below is a breakdown of their core components and workflows.
+
+=== Architecture Overview
+
+ReAct Agents consist of the following components:
+
+1. **Memory**: Stores past interactions, task states, and relevant data to inform future reasoning and actions.
+2. **Planning**: Breaks down tasks into actionable steps, helping the agent decide the sequence of actions.
+3. **Tools**: Enables interaction with external systems, such as databases, APIs, or computation engines.
+4. **System Prompt**: Provides contextual instructions to guide reasoning and tool usage.
+5. **User Prompt**: Defines the task or query that the agent needs to solve.
+
+=== Workflow
+
+The ReAct Agent operates in an iterative cycle:
+
+- **Thought**: The agent reasons through the current task and decides the next step.
+- **Action**: The agent executes an action, such as querying a database or calling an API.
+- **Observation**: The agent evaluates the result of its action to inform subsequent steps.
+
+This cycle continues until the agent reaches a conclusion or determines that the task cannot be completed, at which point it communicates its findings or limitations.
+
+== System Prompt
+
+The system prompt plays a pivotal role in guiding the agent’s behavior. It provides the following:
+
+- **Context**: Establishes the environment (e.g., local or external) and the agent’s knowledge scope (e.g., knowledge cut-off date).
+- **Instructions**: Guides the agent on how to reason through tasks, use tools, and format responses.
+- **Format**: Specifies a structured response pattern, such as JSON, ensuring clarity and consistency in tool interactions.
+
+=== Reasoning-Acting-Observing Cycle
+
+The system prompt enforces a structured thought process:
+
+1. **Thought**: The agent reflects on the problem and decides which tool or action to use.
+2. **Action**: The agent performs the selected action.
+3. **Observation**: The agent evaluates the action’s result and determines the next step.
+
+This structured loop ensures logical task progression and actionable outcomes.
+
+== Advantages of ReAct Agents
+
+- **Adaptability**: Handles dynamic tasks by reasoning through unexpected scenarios and acting accordingly.
+- **Efficiency**: Uses tools only when necessary, reducing unnecessary computations or actions.
+- **Transparency**: Provides reasoning traces and structured outputs, making it easier to debug and improve agent performance.
+
+ReAct Agents exemplify the core principles of Agentic AI by combining reasoning and acting in a way that mimics human problem-solving. Their structured approach ensures reliability, adaptability, and practical utility across diverse applications.
