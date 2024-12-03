@@ -32,12 +32,12 @@ image::02/02-02-agentic-components.png[AI Agents Diagram]
 == Anatomy of an AI Agent:
 
 The Anatomy of an AI Agent consists of interconnected components such as: 
-- Persona 
-- Instruction
-- Task & Planning
-- Memory 
-- Tools
-- Delegation
+* Persona 
+* Instruction
+* Task & Planning
+* Memory 
+* Tools
+* Delegation
 
 which collectively enable the agent to perform tasks, manage strategies, and make 
 decisions effectively within its defined context.
