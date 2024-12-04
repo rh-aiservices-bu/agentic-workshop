@@ -1,5 +1,0 @@
-= Collaboration single llm agents
-include::_attributes.adoc[]
-:slide:
-
-TBD

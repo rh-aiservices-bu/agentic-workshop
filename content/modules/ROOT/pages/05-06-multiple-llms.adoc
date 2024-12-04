@@ -1,5 +1,0 @@
-= Multiple LLMs
-include::_attributes.adoc[]
-:slide:
-
-TBD

@@ -1,0 +1,44 @@
+= SQL Retriever Agents
+include::_attributes.adoc[]
+:slide:
+
+SQL Retriever Agents leverage the power of LLMs to interact with SQL databases, enabling dynamic and 
+intelligent query generation. 
+These agents can answer complex questions by accessing structured data and 
+executing multi-step processes to retrieve and analyze information.
+
+== **How SQL Retriever Agents Work**
+
+SQL Retriever Agents operate by combining LLM capabilities with structured database interactions. 
+
+The process typically involves the following steps:
+
+1. **Retrieve Tables**: The agent queries the database to get a list of tables and their metadata.  
+2. **Identify Relevant Tables**: The agent determines which tables are most relevant to the user’s query.  
+3. **Understand Table Structure**: The agent fetches the schema or structure of the relevant tables.  
+4. **Generate Query**: The agent creates an SQL query based on the user’s input and the table structure.  
+5. **Validate Query**: The agent checks the query for errors or inconsistencies.  
+6. **Execute Query**: The agent runs the query and retrieves the data.  
+7. **Handle Errors**: The agent refines the query if needed to resolve any issues.  
+8. **Provide Results**: The agent formats the retrieved data into a clear and concise response.
+
+image::05/05-07-sql-agents.png[SQL Agents]
+
+== Exercise: SQL Retriever Agents - Practical Example
+
+Let's see the SQL Retriever Agents in Action!
+
+From the `agentic-workshop/lab-materials/05` folder, please open the notebook called `4.5-sql-agents.ipynb` and follow the instructions.
+
+== **Example Use Cases**
+
+- **Data Analytics**: Generating reports or extracting key insights from large datasets in SQL databases.  
+- **Customer Queries**: Answering natural language questions about a database, such as “What were the top sales last quarter?”  
+- **Operational Efficiency**: Automating routine SQL tasks, such as generating performance metrics or updating data.  
+
+== **Benefits of SQL Retriever Agents**
+
+- **Dynamic Querying**: Allows agents to adapt queries to user input and database schema dynamically.  
+- **Error Mitigation**: By iteratively refining queries, agents ensure accurate results even when errors occur.  
+- **Ease of Use**: Enables users to query complex databases using natural language, removing the need for SQL expertise.  
+- **Scalability**: SQL Retriever Agents can operate across multiple databases and integrate with broader workflows seamlessly.

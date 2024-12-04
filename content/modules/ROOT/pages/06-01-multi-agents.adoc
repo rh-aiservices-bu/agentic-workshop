@@ -1,4 +1,4 @@
-= Routing single llm agent tools
+= Multi-Agent Collaboration
 include::_attributes.adoc[]
 :slide:
 

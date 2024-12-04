@@ -1,5 +1,48 @@
-= Routing collaboration
+= Agentic Routing
 include::_attributes.adoc[]
 :slide:
 
-TBD
+## **Overview**
+
+A **Router** is a specialized agent architecture that enables an LLM to select a single step 
+from a predefined set of options. It offers a constrained yet effective way to control decision-making, 
+ensuring precision and reliability in specific applications.
+
+Routers are ideal for scenarios where an LLM must make a single decision or route a task based on 
+context, without the complexity of managing an entire control flow.
+
+## **Key Features of Routers**
+
+1. **Decision-Making Scope**:  
+   - The LLM is presented with a predefined set of options (e.g., tools, APIs, or pathways).  
+   - It selects the most appropriate option based on the input context.
+
+2. **Deterministic Output**:  
+   - The LLM's decision is limited to a constrained set of outcomes, enhancing predictability.
+
+3. **Focused Control**:  
+   - Routers are designed to handle specific, single-choice decisions, reducing complexity while maintaining flexibility.
+
+## **How Routers Work**
+
+1. **Input**: The router receives a user query or task.  
+2. **Evaluation**: The LLM evaluates the query against predefined options.  
+3. **Routing**: It selects the appropriate step or tool to proceed.  
+4. **Execution**: The selected tool or path is executed to complete the task.
+
+![Router Architecture Diagram](02/02-03-router-architecture.png)
+
+## **Examples of Router Applications**
+
+- **Tool Selection**: An LLM determines which tool to call for specific tasks, such as querying a database or sending an email.  
+- **Pathway Routing**: Routing queries to different models or workflows based on their complexity or type.  
+- **Validation**: Deciding if additional steps are needed or if a generated response is sufficient.
+
+## **Benefits of Routers**
+
+- **Efficiency**: Simplifies decision-making with predefined choices.  
+- **Reliability**: Constrained options reduce the likelihood of errors.  
+- **Flexibility**: Can adapt to various tasks within the defined scope.
+
+Routers exemplify a minimal yet powerful approach to enabling control flow in LLM-based systems, making them a 
+cornerstone of modern AI agent architectures.

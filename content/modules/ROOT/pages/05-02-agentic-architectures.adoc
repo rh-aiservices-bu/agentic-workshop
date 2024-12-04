@@ -18,9 +18,12 @@ This flexibility allows agents to solve a wider range of problems, adapting thei
 
 image::05/05-02-agents.png[Agentic Integrations]
 
-1. **Router Agents**: These agents make single-step decisions, selecting from a predefined set of options. They often use structured outputs and prompt engineering to ensure reliable decision-making.
+1. **Router Agents**: These agents make single-step decisions, selecting from a predefined set of options. 
+They often use structured outputs and prompt engineering to ensure reliable decision-making.
 
-2. **Tool-Calling Agents**: These agents use tools like APIs, databases, or code interpreters to solve tasks beyond the LLM’s capabilities. The LLM selects the appropriate tool based on the user input, executing multi-step workflows with access to external resources.
+2. **Tool-Calling Agents**: These agents use tools like APIs, databases, or code interpreters to solve tasks 
+beyond the LLM’s capabilities. The LLM selects the appropriate tool based on the user input, executing multi-step 
+workflows with access to external resources.
 
 3. **ReAct Agents**: A general-purpose architecture that combines **Tool Calling**, **Memory**, and **Planning**:
    - **Tool Calling**: Allows the LLM to invoke various tools dynamically.

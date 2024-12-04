@@ -3,6 +3,20 @@ include::_attributes.adoc[]
 
 == Overview
 
+Welcome to this Agentic Workshop powered by Red Hat AI! 
+
+In this workshop, we will explore what Agentic AI is and how it can enhance Generative AI use cases, 
+all deployed on top of our Red Hat AI platforms.
+
+The goal of this workshop is to provide an overview of Agentic AI, its architectures, 
+and how to build your first agents to address the limitations of LLMs effectively.
+
+Throughout this workshop, you will progress from the basics of Agentic AI to more advanced architectures, 
+where agents collaborate, supervise, and reason/act to solve complex situations and tasks.
+
+Are you ready to dive into the world of Agentic AI with us?
+
+Let’s begin this exciting journey!
 
 == Contributing
 

@@ -28,20 +28,21 @@
 
 * 5. Agentic-AI-Based Integrations
 ** xref:05-01-what-is-an-ai-agent.adoc[5.1 What is an AI Agent?]
-** xref:05-02-agentic-architectures.adoc[5.1 Agentic Architectures]
-** xref:05-03-routing-collaboration.adoc[5.3 Routing & Collaboration (AI Agents & Single LLM)]
-** xref:05-04-routing-single-llm-agent-tools.adoc[5.4 Routing (Single LLM + Single Agent & Multiple Tools)]
-** xref:05-05-collaboration-single-llm-agents.adoc[5.5 Collaboration (Single LLM & Multiple Agents)]
-** xref:05-06-multiple-llms.adoc[5.6 Multiple Agent & Multi LLMs]
+** xref:05-02-agentic-architectures.adoc[5.2 Agentic Architectures]
+** xref:05-03-routing-collaboration.adoc[5.3 Agentic Routing]
+** xref:05-04-tool-calling.adoc[5.4 Tool-Calling Agents]
+** xref:05-05-sql-agents.adoc[5.5 SQL Retriever Agents]
+** xref:05-06-react-implementation.adoc[5.6 ReAct Implementation]
+** xref:05-07-deploying-agents.adoc[5.6 Deploying Agents From Notebook to Production]
 
 * 6. Advanced Agentic AI
-** xref:06-01-react-implementation.adoc[6.1 ReAct Implementation]
-** xref:06-02-human-loop.adoc[6.2 Human in the Loop]
-** xref:06-03-building-supervisors.adoc[6.3 Building Supervisors]
+** xref:06-01-multi-agents.adoc[6.1 Multi-Agent Collaboration]
+** xref:06-02-building-supervisors.adoc[6.2 Building Supervisors]
+** xref:06-03-human-loop.adoc[6.3 Human in the Loop]
 ** xref:06-04-hierarchical-team-agents.adoc[6.4 Hierarchical Team Agents]
 
 * 7. Enhance RAG with Agentic AI
-** xref:07-01-adaptive-rag.adoc[7.1 Adaptive RAG]
+** xref:07-01-agentic-rag.adoc[7.1 Agentic RAG]
 ** xref:07-02-self-rag.adoc[7.2 Self RAG]
 
 * 8. End of Lab

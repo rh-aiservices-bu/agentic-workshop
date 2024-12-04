@@ -1,0 +1,52 @@
+= Human In The Loop
+include::_attributes.adoc[]
+:slide:
+
+**Human-in-the-Loop (HITL)** is an interaction pattern designed to enhance the capabilities of AI agents by 
+involving human oversight at critical stages of the workflow. In complex scenarios, this approach allows 
+developers to interrupt the agent’s execution, review its current state, and provide input or corrections 
+before resuming. This process improves the reliability, accuracy, and safety of AI systems, making it 
+especially useful for sensitive operations.
+
+image::06/06-03-human-loop.png[Human in the Loop, scaledwidth="50%"]
+
+## Common Human-in-the-Loop Interaction Patterns
+
+1. **Approval**: The agent pauses at a predefined point in the workflow, allowing a user to review and approve 
+actions before continuing. This is valuable for actions involving sensitive data or external tool calls.
+
+2. **Editing**: Users can pause the agent, review its current state, and make edits if necessary. This helps 
+correct potential mistakes before they impact the final output.
+
+3. **Input Collection**: The workflow explicitly requests human input at specific nodes, integrating user-provided 
+data directly into the agent’s decision-making process.
+
+## Use-Cases for Human-in-the-Loop
+
+- **Reviewing Tool Calls**: The agent pauses execution to allow users to review or modify the tool call parameters. 
+This is particularly useful for ensuring accurate API requests or sensitive operations.
+
+- **Time Travel**: Developers can replay or fork the agent’s past actions to debug decisions, explore alternative 
+paths, or better understand the reasoning behind the agent’s choices.
+
+## Enhancing Workflows with Persistence
+
+LangGraph’s built-in **persistence** layer enables seamless human-in-the-loop interactions by saving checkpoints 
+of the agent’s state at each step. This allows the workflow to pause for human input, then resume execution without 
+losing progress. Checkpoints also support features like:
+
+- **Breakpoints**: Define specific points in the graph where human input is required, ensuring critical actions are 
+reviewed before proceeding.
+- **Dynamic Breakpoints**: Interrupt the agent based on conditions, such as receiving input that doesn’t meet expected 
+criteria, allowing for real-time intervention.
+
+## Debugging with Time Travel
+
+Human-in-the-loop also supports **time travel**, a powerful debugging concept that includes:
+
+- **Replaying**: Reviewing the agent’s past actions from specific checkpoints to analyze the decision-making process.
+- **Forking**: Editing a past state and creating a new path through the workflow, enabling exploration of alternative scenarios.
+
+By incorporating human input at key stages, human-in-the-loop workflows improve the accuracy, safety, and 
+flexibility of AI agents. This approach is crucial for applications where user oversight and manual adjustments 
+are necessary to achieve reliable outcomes.
