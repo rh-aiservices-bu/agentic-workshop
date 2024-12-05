@@ -30,7 +30,7 @@ context, without the complexity of managing an entire control flow.
 3. **Routing**: It selects the appropriate step or tool to proceed.  
 4. **Execution**: The selected tool or path is executed to complete the task.
 
-![Router Architecture Diagram](02/02-03-router-architecture.png)
+image::05/05-08-agent-routing.png[Agentic Routing]
 
 ## **Examples of Router Applications**
 

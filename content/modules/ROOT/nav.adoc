@@ -39,7 +39,8 @@
 ** xref:06-01-multi-agents.adoc[6.1 Multi-Agent Collaboration]
 ** xref:06-02-building-supervisors.adoc[6.2 Building Supervisors]
 ** xref:06-03-human-loop.adoc[6.3 Human in the Loop]
-** xref:06-04-hierarchical-team-agents.adoc[6.4 Hierarchical Team Agents]
+** xref:06-04-planning-agents.adoc[6.4 Planning Agents]
+** xref:06-05-reflection-agents.adoc[6.5 Reflection Agents]
 
 * 7. Enhance RAG with Agentic AI
 ** xref:07-01-agentic-rag.adoc[7.1 Agentic RAG]

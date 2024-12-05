@@ -2,4 +2,49 @@
 include::_attributes.adoc[]
 :slide:
 
-TBD
+== Overview
+
+Multi-agent collaboration is a powerful design pattern in Agentic AI that enables multiple agents to work 
+together to solve complex tasks. Instead of relying on a single agent to handle all subtasks, this approach 
+assigns specific roles to different agents, allowing each to specialize and contribute effectively.
+
+By breaking down a problem into smaller, manageable subtasks and assigning them to agents with specific expertise, 
+this pattern leverages the divide-and-conquer approach to tackle complex scenarios more efficiently.
+
+== How Multi-Agent Collaboration Works
+
+1. **Task Decomposition**:  
+   A complex problem is divided into smaller subtasks. Each subtask is assigned to an agent specializing in that domain or task.
+
+2. **Role Assignment**:  
+   Agents are designed or prompted for specific roles, such as "researcher" and "chart generator," each with a clear objective and behavior.
+
+3. **Interaction and Communication**:  
+   Agents collaborate by passing messages, sharing data, or requesting assistance from other agents to ensure task completion.
+
+4. **Execution and Coordination**:  
+   The agents execute their assigned subtasks and combine their results to produce the final outcome.
+
+image::05/05-09-multi-agent.png[Multi Agent]
+
+== Benefits of Multi-Agent Collaboration
+
+- **Scalability**: Allows large, complex tasks to be distributed among multiple agents for faster execution.
+- **Specialization**: Enables agents to focus on specific subtasks, optimizing their effectiveness.
+- **Robustness**: Reduces the likelihood of errors by isolating subtasks and handling them individually.
+
+== Example Use Case
+
+For a task like generating insights, multi-agent collaboration might involve:
+
+- A **Researcher Agent** to gather relevant data or information through APIs or databases.  
+- A **Chart Generator Agent** to process the retrieved data and create visual representations like charts or graphs.  
+- A **Router Agent** to manage task flow and coordinate between the Researcher and Chart Generator agents.
+
+This modular approach ensures a streamlined workflow where each agent’s expertise contributes to solving the overall problem.
+
+== Exercise: Multi-Agent Pattern - Practical Example
+
+Let's see the Multi-Agent Pattern in Action!
+
+From the `agentic-workshop/lab-materials/05` folder, please open the notebook called `5.1-multi-agent-routing.ipynb` and follow the instructions.
