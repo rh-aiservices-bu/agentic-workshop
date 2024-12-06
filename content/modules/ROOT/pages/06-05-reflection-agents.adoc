@@ -1,5 +1,62 @@
-= Reflection agents
-include::_attributes.adoc[]
-:slide:
+= Reflection in AI Agents
+include::_attributes.adoc[]  
+:slide:  
 
-TBD
+== Overview
+
+Reflection is a key design pattern in agentic AI workflows. It enables an LLM to evaluate its own outputs by analyzing its past steps, 
+along with observations from tools or the environment, to assess the quality of its actions. 
+This process can lead to improved performance through re-planning, refining, or re-evaluating the task at hand.
+
+In essence, reflection allows an LLM to act as its own critic, spotting errors or inefficiencies in its responses and iteratively 
+improving its output. This pattern is simple to implement yet delivers surprising performance gains in many use cases.
+
+== How Reflection Works
+
+1. **Initial Output Generation**: The agent generates an initial response or performs an action based on the given task.
+
+2. **Critical Evaluation**: The agent evaluates its output by reflecting on its correctness, style, and efficiency. 
+It identifies areas for improvement or errors in the response.
+
+3. **Feedback Incorporation**:  The agent uses the constructive feedback from its reflection process to revise and improve the output.
+
+4. **Iterative Refinement**: The reflection-feedback loop can be repeated to achieve further improvements in the output, 
+ensuring higher-quality results.
+
+image::06/06-05-reflection.png[Reflection"]
+
+== Example Use Case
+
+Consider an LLM tasked with writing code for a specific function:  
+
+1. The agent generates the initial code.  
+2. It reflects on the output, asking itself:  
+   - Is the code correct and efficient?  
+   - Are there improvements to be made in style or performance?  
+3. The agent provides constructive feedback on its own code and uses it to rewrite the code.  
+4. After iterating through this process, the agent produces a refined and optimized solution.  
+
+This reflection process can also incorporate external tools like unit tests to validate the code's correctness before producing the final output.
+
+== Exercise: Reflection in Agents - Practical Example
+
+Let's see the Reflection in Agents in Action!
+
+From the `agentic-workshop/lab-materials/05` folder, please open the notebook called `5.5-reflection-agents.ipynb` and follow the instructions.
+
+== Advanced Reflection: Multi-Agent Approach
+
+Reflection can be enhanced by leveraging a multi-agent framework:  
+
+- **Generator Agent**: Responsible for producing the initial output.  
+- **Critic Agent**: Focused on critically evaluating the Generator Agent’s output and providing constructive feedback.  
+
+This interaction between agents mimics a collaborative review process, leading to more reliable and polished results. 
+The discussion between the agents allows for deeper analysis and improvement of the output.
+
+== Benefits of Reflection
+
+- **Improved Quality**: Enables the agent to identify and correct its own mistakes, leading to better results.  
+- **Iterative Refinement**: The process of repeated self-evaluation drives continuous improvement.  
+- **Tool Integration**: Reflection can incorporate external tools, like unit tests or web searches, to validate outputs.  
+- **Versatility**: Applicable to tasks like code generation, text writing, and question answering.  

@@ -11,6 +11,8 @@ ensuring precision and reliability in specific applications.
 Routers are ideal for scenarios where an LLM must make a single decision or route a task based on 
 context, without the complexity of managing an entire control flow.
 
+image::05/05-08-agent-routing.png[Agentic Routing]
+
 ## **Key Features of Routers**
 
 1. **Decision-Making Scope**:  
@@ -30,7 +32,6 @@ context, without the complexity of managing an entire control flow.
 3. **Routing**: It selects the appropriate step or tool to proceed.  
 4. **Execution**: The selected tool or path is executed to complete the task.
 
-image::05/05-08-agent-routing.png[Agentic Routing]
 
 ## **Examples of Router Applications**
 
