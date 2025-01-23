@@ -20,4 +20,4 @@ The Bee Agent Framework enables scalable, agent-based workflows compatible with 
 
 As a sneak peak around the capabilities of Bee, please check out:
 
-* [Bee Example](https://github.com/rh-aiservices-bu/agentic-workshop/blob/main/lab-materials/07-agent-frameworks/7.1-tool-calling-autogen-granite3-system.ipynb)
+* (https://github.com/rh-aiservices-bu/agentic-workshop/blob/main/lab-materials/07-agent-frameworks/7.1-tool-calling-autogen-granite3-system.ipynb[Bee Example])
