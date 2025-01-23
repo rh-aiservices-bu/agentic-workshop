@@ -2,7 +2,7 @@
 include::_attributes.adoc[]
 :slide:
 
-* **Language**: Python  
+* **Language**: Typescript  
 * **Company**: IBM  
 * **License**: MIT
 
