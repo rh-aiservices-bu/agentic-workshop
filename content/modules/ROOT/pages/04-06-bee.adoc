@@ -15,3 +15,9 @@ The Bee Agent Framework enables scalable, agent-based workflows compatible with 
 - **Code Execution**: Sandbox environment for secure code interpretation.
 - **Memory Optimization**: Strategies to manage token usage efficiently.
 - **Traceability**: Comprehensive logging and MLFlow integration for debugging.
+
+== Bee in Action! - Example
+
+As a sneak peak around the capabilities of Bee, please check out:
+
+* [Bee Example](https://github.com/rh-aiservices-bu/agentic-workshop/blob/main/lab-materials/07-agent-frameworks/7.1-tool-calling-autogen-granite3-system.ipynb)

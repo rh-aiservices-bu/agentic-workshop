@@ -16,3 +16,9 @@ include::_attributes.adoc[]
 - **Agent Code Execution**: To handle complex scenarios, AutoGen enables agents to execute code directly, allowing them to dynamically adjust their actions based on real-time inputs and changing conditions. This feature empowers agents to handle more nuanced and sophisticated tasks within workflows.
 
 - **AutoGen Studio**: A core component of the AutoGen framework, AutoGen Studio provides a low-code interface for users to quickly prototype, test, and refine agent workflows. With AutoGen Studio, developers can seamlessly design, enhance, and integrate agents into larger systems with minimal coding effort. The Studio’s intuitive interface enables rapid iteration, making it easier to deploy and scale agentic applications effectively.
+
+== AutoGen in Action! - Example
+
+As a sneak peak around the capabilities of AutoGen, please check out:
+
+* [Autogen Example](https://github.com/rh-aiservices-bu/agentic-workshop/blob/main/lab-materials/07-agent-frameworks/7.1-tool-calling-autogen-granite3-system.ipynb)

@@ -29,3 +29,9 @@ them to handle complex calculations and respond to dynamic conditions in real-ti
 promoting collaboration within the developer community. For enterprises, CrewAI also provides **CrewAI+**, an advanced 
 version with a no-code interface, ready-made templates for common use cases, and enhanced capabilities for managing agents 
 at scale in production environments.
+
+== CrewAI in Action! - Example
+
+As a sneak peak around the capabilities of CrewAI, please check out:
+
+* [CrewAI Example](https://github.com/rh-aiservices-bu/agentic-workshop/blob/main/lab-materials/07-agent-frameworks/7.1-tool-calling-autogen-granite3-system.ipynb)
