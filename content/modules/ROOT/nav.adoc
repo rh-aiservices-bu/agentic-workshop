@@ -11,20 +11,20 @@
 ** xref:02-03-what-is-agentic-ai.adoc[2.3 What is Agentic AI?]
 ** xref:02-04-why-should-care-agents.adoc[2.3 Why is it important to my organization?]
 
-* 3. Agentic AI Frameworks
-** xref:03-01-ai-agent-frameworks.adoc[3.1 AI Agents Frameworks]
-** xref:03-02-langgraph.adoc[3.2 LangGraph]
-** xref:03-03-autogen-framework.adoc[3.3 AutoGen Framework]
-** xref:03-04-crew-ai.adoc[3.4 CrewAI]
-** xref:03-05-llama-index.adoc[3.5 LlamaIndex]
-** xref:03-06-bee.adoc[3.6 Bee]
+* 3. Advance LLM Patterns
+** xref:03-01-advance-llm-patterns.adoc[4.1 Non-Agentic Patterns]
+** xref:03-02-tools-usage.adoc[4.2 Tools Usage from LLM Perspective]
+** xref:03-03-chain-of-thought.adoc[4.3 Chain of Thought]
+** xref:03-04-react-prompting.adoc[4.4 React Prompting]
+** xref:03-05-rag.adoc[4.5 Retrieval Augmented Generation (RAG)]
 
-* 4. Advance LLM Patterns
-** xref:04-01-advance-llm-patterns.adoc[4.1 Non-Agentic Patterns]
-** xref:04-02-tools-usage.adoc[4.2 Tools Usage from LLM Perspective]
-** xref:04-03-chain-of-thought.adoc[4.3 Chain of Thought]
-** xref:04-04-react-prompting.adoc[4.4 React Prompting]
-** xref:04-05-rag.adoc[4.5 Retrieval Augmented Generation (RAG)]
+* 4. Agentic AI Frameworks
+** xref:04-01-ai-agent-frameworks.adoc[3.1 AI Agents Frameworks]
+** xref:04-02-langgraph.adoc[3.2 LangGraph]
+** xref:04-03-autogen-framework.adoc[3.3 AutoGen Framework]
+** xref:04-04-crew-ai.adoc[3.4 CrewAI]
+** xref:04-05-llama-index.adoc[3.5 LlamaIndex]
+** xref:04-06-bee.adoc[3.6 Bee]
 
 * 5. Agentic-AI-Based Integrations
 ** xref:05-01-what-is-an-ai-agent.adoc[5.1 What is an AI Agent?]
