@@ -1,0 +1,85 @@
+= Planning in AI Agents
+include::_attributes.adoc[]  
+:slide:  
+
+== Overview
+
+Planning is a foundational design pattern in Agentic AI, enabling agents to dynamically decide the sequence 
+of steps needed to accomplish complex tasks. Instead of relying on predefined workflows, agents equipped with 
+Planning capabilities can decompose a problem into smaller subtasks, determine the appropriate tools or actions 
+for each subtask, and execute them autonomously. This adaptability is critical for handling tasks where the 
+steps cannot be fully anticipated in advance.
+
+
+== How Planning Works
+
+1. **Task Decomposition**:  
+   The agent begins by analyzing the task and breaking it into smaller, manageable subtasks.  
+
+2. **Dynamic Decision-Making**:  
+   At each step, the agent decides which tool or action is most appropriate based on the current 
+   context and the observations from previous steps.  
+
+3. **Execution and Observation**:  
+   The agent performs the chosen action or invokes a tool, observes the output, and incorporates the 
+   results into its subsequent decisions.  
+
+4. **Iterative Process**:  
+   This cycle of decision-making and execution continues until the agent determines the task is complete.
+
+Planning agents often operate in a loop where they decide dynamically whether more actions or tool calls are needed. 
+This iterative process ensures flexibility and allows the agent to adapt to unexpected changes in the environment.
+
+image::06/06-04-planning.png[Planning"]
+
+== Plan-and-Execute Style vs. ReAct Style
+
+Planning in agents often contrasts with the more typical ReAct-style approach, where an agent makes decisions one step at a time. 
+In ReAct-style agents, the focus is on iterative decision-making, evaluating the need for the next step based on the current state.  
+
+However, a "plan-and-execute" style agent creates an explicit long-term plan at the outset, executing steps sequentially or as needed. 
+This approach has several advantages:  
+
+- **Explicit Long-Term Planning**: Planning agents map out a complete sequence of steps at the start, which is particularly useful 
+for tasks that require maintaining coherence and direction over multiple steps. This compensates for limitations of even the most 
+advanced LLMs, which can struggle with long-term reasoning.  
+
+- **Efficient Model Usage**:  Planning agents can delegate execution to smaller or less expensive models while reserving larger, 
+more capable models for the planning phase. This makes the approach cost-efficient and scalable.  
+
+- **Traceability**:  Planning agents leave behind a clear trace or log of their steps, making it easier to debug and analyze 
+their reasoning and execution paths.
+
+== Example Use Case: Plan-and-Execute Workflow
+
+A "plan-and-execute" workflow involves breaking down a user request into distinct tasks, executing them sequentially, and dynamically 
+adjusting the plan based on intermediate results. Below is a step-by-step explanation aligned with the diagram:
+
+1. **User Request**:  The user provides a high-level goal or query, such as, "Summarize the research on renewable energy and create a report."  
+
+2. **Generate Tasks (Planning Phase)**:  
+   The agent analyzes the request and generates a list of tasks, such as:  
+   - Find key research articles.  
+   - Extract insights from the articles.  
+   - Write a summary.  
+
+3. **Task Execution (Single-Task Agent)**:  
+   - The Single-Task Agent picks tasks from the list and executes them one by one.  
+   - For instance, it may start by querying a database for relevant articles, then extract insights.  
+
+4. **Update State**:  
+   After completing each task, the agent updates its state with the results, ensuring subsequent tasks have access to the latest data.  
+
+5. **Replan (if needed)**:  
+   - If the results of a task indicate new or modified requirements, the agent replans to adjust the remaining tasks.  
+   - For instance, if the article search yields too few results, the agent might decide to refine the search criteria.  
+
+6. **Respond to User**:  
+   Once all tasks are completed, the agent compiles the results and delivers a comprehensive response to the user.
+
+== Benefits of Planning
+
+- **Adaptability**: Allows agents to respond dynamically to changes or errors in their environment.  
+- **Decomposition**: Breaks down complex tasks into manageable steps, ensuring clarity and structure.  
+- **Cost Efficiency**: Delegates execution to smaller models, using more powerful models only for planning.  
+- **Traceability**: Maintains a clear record of decisions and actions, enabling better debugging and analysis.

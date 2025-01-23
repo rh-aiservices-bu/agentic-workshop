@@ -67,7 +67,7 @@ image::04/04-07-react-final.png[ReAct Final]
 
 Let's see the Tool Calling and Routing Agents in Action!
 
-From the `agentic-workshop/lab-materials/05` folder, please open the notebook called `5.1-simple-agent-routing.ipynb` and follow the instructions.
+From the `agentic-workshop/lab-materials/04` folder, please open the notebook called `4.3-react-agents.ipynb` and follow the instructions.
 
 == Advantages of ReAct Agents
 

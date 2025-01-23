@@ -28,7 +28,7 @@ image::05/05-07-sql-agents.png[SQL Agents]
 
 Let's see the SQL Retriever Agents in Action!
 
-From the `agentic-workshop/lab-materials/05` folder, please open the notebook called `4.5-sql-agents.ipynb` and follow the instructions.
+From the `agentic-workshop/lab-materials/04` folder, please open the notebook called `4.5-sql-agents.ipynb` and follow the instructions.
 
 == **Example Use Cases**
 

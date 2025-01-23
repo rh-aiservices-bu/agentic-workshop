@@ -30,8 +30,6 @@ workflows with access to external resources.
    - **Memory**: Retains context across steps, using short-term and long-term memory.
    - **Planning**: Enables the LLM to decide on multi-step actions, iteratively refining its approach based on observations.
 
-image::05/05-01-tool-calling.png[Tool Calling]
-
 ## Key Features for Custom Agent Architectures
 
    - **Human-in-the-Loop**: Involves human oversight for critical decisions, such as approving actions or editing the agent’s state. This is crucial for sensitive tasks where full automation may not be desirable.
