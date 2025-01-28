@@ -2,21 +2,17 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: ic-shared-db
+namespace: agentic-zone
 
 commonLabels:
-  component: ic-shared-db
+  component: agentic-zone
 
 resources:
-# wave 0
-- namespace.yaml
 # wave 1
 - pvc.yaml
 - secret.yaml
-- secret-minio.yaml
 - deployment.yaml
 - service.yaml
-- sql-script-configmap.yaml
+# - sql-script-configmap.yaml
 # wave 2
 - db-init-job.yaml
-- populate-images.yaml

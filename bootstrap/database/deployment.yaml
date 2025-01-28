@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: ic-shared-db
-  name: ic-shared-db
+  namespace: agentic-zone
+  name: agentic-db
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
   selector:
     matchLabels:
-      app: ic-shared-db
+      app: agentic-db
   replicas: 1
   template:
     metadata:
       labels:
-        app: ic-shared-db
+        app: agentic-db
     spec:
       containers:
         - name: postgresql

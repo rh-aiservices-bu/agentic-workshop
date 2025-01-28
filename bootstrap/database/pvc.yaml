@@ -3,9 +3,9 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: claimdb
-  namespace: ic-shared-db
+  namespace: agentic-zone
   labels:
-    app: ic-shared-db
+    app: agentic-db
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
