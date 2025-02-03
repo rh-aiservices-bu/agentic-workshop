@@ -3,6 +3,8 @@ include::_attributes.adoc[]
 
 == Introduction to AI Agent Frameworks
 
+Building on the structured and predictable ways we enhance LLM capabilities in previous section, AI agent frameworks take these patterns a step further by enabling models to act autonomously. While techniques like Chain of Thought, ReAct Prompting, and RAG improve reasoning, retrieval, and interaction, agentic systems orchestrate these capabilities to manage workflows, make decisions, and dynamically respond to complex environments.
+
 AI agent frameworks provide a foundation for building systems where intelligent agents can autonomously interact, make decisions, and perform tasks within a defined environment. These frameworks are becoming essential tools for developers, enabling them to create agents capable of reasoning, learning, and adapting to complex scenarios. Agents within these frameworks often act independently or collaboratively, fulfilling roles from simple task automation to complex decision-making in real-time.
 
 image::02/02-01-agentic-vs-non-agentic.png[AI Agents Diagram]

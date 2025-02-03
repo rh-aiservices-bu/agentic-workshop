@@ -74,7 +74,9 @@ focus on innovation.
 ### **Next Steps**  
 
 Crystal Sphere Insights aims to explore **agentic AI solutions** to address these challenges. 
+
 Proposed improvements include:  
+
 - Automating repetitive data handling and troubleshooting tasks.  
 - Enhancing client interaction workflows using natural language processing and intelligent automation.  
 - Integrating real-time feedback systems to improve report quality and portal functionality.  
