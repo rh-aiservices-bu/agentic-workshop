@@ -27,4 +27,4 @@ image::04/04-02-cot.png[Chain of Thought, scaledwidth="20%"]
 
 Let's see the Chain of Thought in Action!
 
-From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.2-chain-of-thought.ipynb` and follow the instructions.
+From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.3-chain-of-thought.ipynb` and follow the instructions.

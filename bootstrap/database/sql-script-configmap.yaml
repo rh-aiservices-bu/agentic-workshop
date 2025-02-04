@@ -1,0 +1,64 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sql-script-configmap
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+data:
+  script.sql: |
+    -- Ensure the schema exists
+    CREATE SCHEMA IF NOT EXISTS agenticdb AUTHORIZATION agenticdb;
+
+    -- Drop existing tables if they exist
+    DROP TABLE IF EXISTS agenticdb.transactions CASCADE;
+
+    -- Drop existing sequences if they exist
+    DROP SEQUENCE IF EXISTS agenticdb.transactions_id_seq;
+
+    -- Create a sequence for transaction IDs
+    CREATE SEQUENCE IF NOT EXISTS agenticdb.transactions_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1;
+
+    -- Create the transactions table
+    CREATE TABLE IF NOT EXISTS agenticdb.transactions
+    (
+        id INTEGER NOT NULL DEFAULT nextval('agenticdb.transactions_id_seq'::regclass),
+        transaction_id TEXT COLLATE pg_catalog."default" UNIQUE NOT NULL,
+        client_name TEXT COLLATE pg_catalog."default" NOT NULL,
+        transaction_type TEXT COLLATE pg_catalog."default" CHECK (transaction_type IN ('BUY', 'SELL', 'SHORT SELL')),
+        stock_symbol TEXT COLLATE pg_catalog."default" NOT NULL,
+        shares INTEGER NOT NULL CHECK (shares > 0),
+        price_per_share NUMERIC(10,2) NOT NULL CHECK (price_per_share > 0),
+        broker TEXT COLLATE pg_catalog."default",
+        transaction_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (id)
+    )
+    WITH (
+        OIDS = FALSE
+    )
+    TABLESPACE pg_default;
+
+    -- Link the sequence to the table
+    ALTER SEQUENCE agenticdb.transactions_id_seq OWNED BY agenticdb.transactions.id;
+
+    -- Insert sample transactions
+
+    -- TRANSACTION 1: Alice Johnson buys 50 shares of Apple (AAPL)
+    INSERT INTO agenticdb.transactions (transaction_id, client_name, transaction_type, stock_symbol, shares, price_per_share, broker, transaction_time)
+    VALUES ('TXN1001', 'Alice Johnson', 'BUY', 'AAPL', 50, 185.75, 'Morgan Stanley', '2024-06-15 09:30:00');
+
+    -- TRANSACTION 2: Michael Smith sells 100 shares of Tesla (TSLA)
+    INSERT INTO agenticdb.transactions (transaction_id, client_name, transaction_type, stock_symbol, shares, price_per_share, broker, transaction_time)
+    VALUES ('TXN1002', 'Michael Smith', 'SELL', 'TSLA', 100, 245.20, 'Charles Schwab', '2024-06-15 10:15:00');
+
+    -- TRANSACTION 3: Emma Davis buys 200 shares of Microsoft (MSFT)
+    INSERT INTO agenticdb.transactions (transaction_id, client_name, transaction_type, stock_symbol, shares, price_per_share, broker, transaction_time)
+    VALUES ('TXN1003', 'Emma Davis', 'BUY', 'MSFT', 200, 340.10, 'JPMorgan Chase', '2024-06-15 11:45:00');
+
+    -- TRANSACTION 4: Robert Miller short-sells 75 shares of Nvidia (NVDA)
+    INSERT INTO agenticdb.transactions (transaction_id, client_name, transaction_type, stock_symbol, shares, price_per_share, broker, transaction_time)
+    VALUES ('TXN1004', 'Robert Miller', 'SHORT SELL', 'NVDA', 75, 462.85, 'Goldman Sachs', '2024-06-15 14:30:00');

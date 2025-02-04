@@ -16,11 +16,17 @@ Through tool calling, LLMs can:
 - **Perform Specialized Calculations**: Use tools like code interpreters to execute complex calculations or data transformations.
 - **Format Responses for Structured Systems**: Generate responses in specific schemas required by APIs or databases, ensuring smooth communication with these systems.
 
-== Exercise: Tools Usage - Practical Example
+== Exercise: Tools Usage (Internet Search) - Practical Example
 
 Let's see the Tools Usage in Action!
 
 From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.1-tools-calling.ipynb` and follow the instructions.
+
+== Exercise: Tools Usage (Database Query) - Practical Example
+
+Let's see the Tools Usage in Action!
+
+From the `agentic-workshop/lab-materials/02` folder, please open the notebook called `02.2-tools-calling-sql.ipynb` and follow the instructions.
 
 == Benefits of Using Tools with LLMs
 

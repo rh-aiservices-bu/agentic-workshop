@@ -16,6 +16,12 @@ In a RAG setup, the model follows a two-step process:
 
 image::04/04-04-rag.jpg[RAG]
 
+== Exercise: RAG Pattern - Practical Example
+
+Let's see the RAG Pattern in Action!
+
+From the `agentic-workshop/lab-materials/03` folder, please open all the notebooks on that folder in order and follow the instructions.
+
 == Benefits of RAG
 
 - **Enhanced Accuracy**: RAG reduces reliance on outdated or incomplete training data, leading to more accurate and contextually relevant responses.

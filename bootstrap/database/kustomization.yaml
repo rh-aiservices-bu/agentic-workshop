@@ -13,6 +13,6 @@ resources:
 - secret.yaml
 - deployment.yaml
 - service.yaml
-# - sql-script-configmap.yaml
+- sql-script-configmap.yaml
 # wave 2
 - db-init-job.yaml
