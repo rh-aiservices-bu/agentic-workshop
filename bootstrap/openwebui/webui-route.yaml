@@ -1,0 +1,17 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: open-webui
+  namespace: open-webui
+  labels: {}
+spec:
+  to:
+    kind: Service
+    name: open-webui-service
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+    destinationCACertificate: ''
+  port:
+    targetPort: 8080
+  alternateBackends: []
