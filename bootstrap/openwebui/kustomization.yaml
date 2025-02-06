@@ -3,3 +3,4 @@ resources:
   - webui-service.yaml
   - webui-ns.yaml
   - webui-pvc.yaml
+  - webui-route.yaml
